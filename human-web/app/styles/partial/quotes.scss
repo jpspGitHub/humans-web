@@ -1,0 +1,40 @@
+.quotes {
+    padding: $spacing-xl $spacing-lg;
+    background-color: $color-white;
+    color: $font-color-white;
+    text-align: center;
+  
+    &__container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    &__phrase {
+      font-size: $font-size-lg;
+      font-style: italic;
+      margin-bottom: $spacing-md;
+      color: $font-color-white;
+  
+      @media (max-width: 768px) {
+        font-size: $font-size-xl;
+      }
+  
+      @media (max-width: 480px) {
+        font-size: $font-size-lg;
+      }
+    }
+  
+    &__author {
+      font-size: $font-size-xl;
+      font-weight: bold;
+      color: $color-secondary;
+  
+      @media (max-width: 768px) {
+        font-size: $font-size-lg;
+      }
+  
+      @media (max-width: 480px) {
+        font-size: $font-size-md;
+      }
+    }
+  }

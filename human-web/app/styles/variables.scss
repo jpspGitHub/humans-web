@@ -1,0 +1,31 @@
+// Colors
+$color-primary: #00214d;
+$color-secondary: #1e98a8;
+$color-white: #ffffff;
+$color-gray: #bfc0c2;
+
+// Spacing
+$base-spacing: 8px;
+
+// Derived Spacing
+$spacing-xs: $base-spacing * 0.5; // 4px
+$spacing-sm: $base-spacing;      // 8px
+$spacing-md: $base-spacing * 2;  // 16px
+$spacing-lg: $base-spacing * 3;  // 24px
+$spacing-xl: $base-spacing * 4;  // 32px
+
+// Font Sizes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+
+// Font Colors (Contrasting)
+$font-color-primary: $color-white;       // Contrasts with $color-primary
+$font-color-secondary: $color-white;    // Contrasts with $color-secondary
+$font-color-white: $color-primary;      // Contrasts with $color-white
+$font-color-gray: $color-primary;       // Contrasts with $color-gray
+
+// Font Family
+$font-family-primary: 'Roboto', sans-serif;

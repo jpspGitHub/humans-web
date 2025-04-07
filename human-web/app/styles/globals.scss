@@ -1,0 +1,26 @@
+@import './reset.scss';
+@import './variables.scss';
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: $font-color-white;
+  background: $color-white;
+  font-family: $font-family-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@import './partial/header.scss';
+@import './partial/main-cover.scss';
+@import './partial/first-section.scss';
+@import './partial/about-us.scss';
+@import './partial/quotes.scss';
+@import './partial/services.scss';
+@import './partial/contact-us.scss';
+@import './partial/footer.scss';

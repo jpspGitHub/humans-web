@@ -1,0 +1,86 @@
+.about-us {
+    padding: 40px 20px;
+    background-color: #00214d; // Set background color to #00214d
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      @media (max-width: 768px) {
+        flex-direction: column; // Stack content on smaller screens
+      }
+    }
+  
+    &__image {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    &__content {
+      flex: 1;
+      text-align: left;
+      color: #ffffff; // Ensure text is readable on dark background
+        padding: 0 $spacing-xl;
+
+      @media (max-width: 768px) {
+        text-align: center; // Center text on smaller screens
+      }
+    }
+  
+    &__title {
+      font-size: 2rem;
+      font-family: $font-family-primary;
+      color: #ffffff; // White text for contrast
+      margin-bottom: 8px;
+    }
+  
+    &__subtitle {
+      font-size: 1.5rem;
+      font-family: $font-family-primary;
+      color: #1e98a8; // Secondary color for subtitle
+      margin-bottom: 16px;
+    }
+  
+    &__message {
+        &__message {
+            font-size: 1.125rem; // Slightly larger font size for better readability
+            line-height: 1.6; // Increase line height for better spacing between lines
+            font-family: $font-family-primary;
+            color: #ffffff; // White text for readability
+            margin-bottom: 24px;
+          
+            b {
+              font-weight: bold; // Ensure bold text stands out
+              color: #1e98a8; // Use secondary color for emphasis
+            }
+          
+            @media (max-width: 768px) {
+              font-size: 1rem; // Adjust font size for smaller screens
+              line-height: 1.5; // Slightly reduce line height on smaller screens
+            }
+          }
+    }
+  
+    &__button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-family: $font-family-primary;
+      color: #00214d; // Dark text for contrast
+      background-color: #ffffff; // White button background
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #1e98a8; // Change to secondary color on hover
+        color: #ffffff; // White text on hover
+      }
+    }
+  }
