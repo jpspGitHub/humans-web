@@ -5,7 +5,7 @@ const Quotes: React.FC = () => {
     <section className="quotes">
       <div className="quotes__container">
         <p className="quotes__phrase">
-          "Una persona puede marcar la diferencia y todos deberían intentarlo."
+        &quot;Una persona puede marcar la diferencia y todos deberían intentarlo.&quot;
         </p>
         <p className="quotes__author">— John F. Kennedy</p>
       </div>

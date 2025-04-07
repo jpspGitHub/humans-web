@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.scss";
 import Header from "./partial/header";
 import MainCover from "./partial/main-cover";
 import FirstSection from "./partial/first-section";

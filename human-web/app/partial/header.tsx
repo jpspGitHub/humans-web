@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import logo from './../../public/images/human_logo.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,14 +14,14 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header__logo">
-        <a href="/">
+        <Link href="/">
           <Image
             src={logo}
             alt="Centro Human"
             width={50}
             height={50}
           />
-        </a>
+        </Link>
       </div>
       <button className="header__hamburger" onClick={toggleMenu} aria-label="Toggle menu">
         <span className="header__hamburger-line">-</span>
