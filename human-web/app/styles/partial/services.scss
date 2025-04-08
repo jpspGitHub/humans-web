@@ -13,7 +13,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: $spacing-md;
     flex-wrap: wrap; // Ensure responsiveness
     max-width: 1200px;
     margin: 0 auto; // Center the content

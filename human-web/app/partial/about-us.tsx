@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import aboutImage from './../../public/images/about-us.jpg';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs: React.FC = () => {
   return (
@@ -16,8 +19,10 @@ const AboutUs: React.FC = () => {
             />
         </div>
         <div className="about-us__content">
-          <h2 className="about-us__title">Quienes somos?</h2>
-          <h3 className="about-us__subtitle">Formando personas listas para responder ante lo imprevisto.</h3>
+          <div className="about-us__content-header">
+            <h2 className="about-us__title">Quienes somos?</h2>
+            <h3 className="about-us__subtitle">Formando personas listas para responder ante lo imprevisto.</h3>
+          </div>
           <p className="about-us__message">
             <b>HUMAN</b> es un centro dedicado a la
             capacitación y entrenamiento de
@@ -34,7 +39,8 @@ const AboutUs: React.FC = () => {
             Uruguay, comprometidos en mejorar la respuesta ante emergencias
             médicas y acuáticas.
           </p>
-          <button className="about-us__button">Next</button>
+          {/* <button className="about-us__button">$border-radius-sm</button> */}
+          <Link className="about-us__button" href={'#'}>Averigua más! <FontAwesomeIcon icon={faArrowRight} /></Link>
         </div>
       </div>
     </section>

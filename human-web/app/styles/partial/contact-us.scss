@@ -25,7 +25,7 @@
     &__form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: $spacing-md;
     }
   
     &__form-group {
@@ -47,7 +47,7 @@
       font-size: 1rem;
       font-family: var(--font-family-primary);
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: $border-radius-sm;
     }
   
     &__textarea {
@@ -62,7 +62,7 @@
       color: #ffffff;
       background-color: #1e98a8;
       border: none;
-      border-radius: 4px;
+      border-radius: $border-radius-sm;
       cursor: pointer;
       transition: background-color 0.3s ease;
   

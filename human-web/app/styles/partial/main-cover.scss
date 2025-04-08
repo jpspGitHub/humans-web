@@ -22,9 +22,9 @@
       color: $color-white;
   
       @media (max-width: 768px) {
-        width: 100%; // Full width on smaller screens
-        clip-path: none; // Remove diagonal border for simplicity
-        padding: 16px;
+        width: 100%;
+        clip-path: none;
+        padding: $spacing-md;
       }
     }
   
@@ -33,7 +33,7 @@
       }
 
     &__title {
-      font-size: $font-size-xl;
+      font-size: $font-size-xxl;
       margin-bottom: $spacing-md;
   
       @media (max-width: 768px) {
@@ -46,15 +46,15 @@
     }
   
     &__subtitle {
-      font-size: $font-size-md;
+      font-size: $font-size-lg;
       font-family: $font-family-primary;
   
       @media (max-width: 768px) {
-        font-size: $font-size-sm; // Adjust font size for tablets
+        font-size: $font-size-md; // Adjust font size for tablets
       }
   
       @media (max-width: 480px) {
-        font-size: $font-size-xs; // Adjust font size for mobile devices
+        font-size: $font-size-sm; // Adjust font size for mobile devices
       }
     }
   }
