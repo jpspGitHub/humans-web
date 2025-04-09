@@ -37,11 +37,11 @@
       margin-bottom: $spacing-md;
   
       @media (max-width: 768px) {
-        font-size: $font-size-lg; // Smaller font size for tablets
+        font-size: $font-size-xl; // Smaller font size for tablets
       }
   
       @media (max-width: 480px) {
-        font-size: $font-size-md; // Smaller font size for mobile devices
+        font-size: $font-size-xl; // Smaller font size for mobile devices
       }
     }
   
@@ -50,11 +50,11 @@
       font-family: $font-family-primary;
   
       @media (max-width: 768px) {
-        font-size: $font-size-md; // Adjust font size for tablets
+        font-size: $font-size-lg;
       }
   
       @media (max-width: 480px) {
-        font-size: $font-size-sm; // Adjust font size for mobile devices
+        font-size: $font-size-lg;
       }
     }
   }

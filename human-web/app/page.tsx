@@ -6,6 +6,7 @@ import Quotes from "./partial/quotes";
 import Services from "./partial/services";
 import ContactUs from "./partial/contact-us";
 import Footer from "./partial/footer";
+import OurTeam from "./partial/our-team";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <Quotes />
+      <OurTeam />
       <ContactUs />
       <Footer />
     </div>

@@ -34,7 +34,6 @@
       width: 100%;
       height: auto;
       border-radius: $border-radius-md;
-      // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -48,7 +47,7 @@
     justify-content: space-between;
 
     @media (max-width: 768px) {
-      text-align: center; // Center text on smaller screens
+      text-align: left;
     }
   }
 
@@ -58,6 +57,10 @@
     margin-bottom: $spacing-sm;
     border-bottom: 1px solid $color-gray;
     padding-bottom: $spacing-sm;
+    @media (max-width: 768px) {
+      font-size: $font-size-xl;
+
+    }
   }
 
   &__subtitle {

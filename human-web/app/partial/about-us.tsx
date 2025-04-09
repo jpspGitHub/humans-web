@@ -39,7 +39,6 @@ const AboutUs: React.FC = () => {
             Uruguay, comprometidos en mejorar la respuesta ante emergencias
             médicas y acuáticas.
           </p>
-          {/* <button className="about-us__button">$border-radius-sm</button> */}
           <Link className="about-us__button" href={'#'}>Averigua más! <FontAwesomeIcon icon={faArrowRight} /></Link>
         </div>
       </div>

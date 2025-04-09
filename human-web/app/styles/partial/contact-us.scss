@@ -1,31 +1,51 @@
 .contact-us {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+  background-color: $color-light-gray;
+  width: 100%;
+  padding: $spacing-xl $spacing-lg;
   
     &__container {
-      max-width: 800px;
+      max-width: $content-width;
       margin: 0 auto;
       text-align: center;
     }
   
     &__title {
-      font-size: 2rem;
-      font-family: var(--font-family-primary);
-      color: #00214d;
-      margin-bottom: 16px;
+      font-size: $font-size-xxl;
+      color: $color-primary;
+      margin-bottom: $spacing-md;
     }
   
     &__description {
-      font-size: 1rem;
-      font-family: var(--font-family-primary);
-      color: #666666;
-      margin-bottom: 32px;
+      font-size: $font-size-md;
+      color: $color-dark-gray;
+      margin-bottom: $spacing-xl;
     }
   
+    &__content{
+      display: flex;
+      border-radius: $border-radius-md;
+    }
+
     &__form {
       display: flex;
       flex-direction: column;
       gap: $spacing-md;
+      width: 50%;
+      margin: $spacing-lg;
+      padding: $spacing-lg;
+      background-color: rgba($color: #000000, $alpha: .7);
+      border-radius: $border-radius-md;
+    }
+
+    &__image {
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: $border-radius-md;
+        border-bottom-right-radius: $border-radius-md;
+      }
     }
   
     &__form-group {
@@ -34,19 +54,17 @@
   
     &__label {
       display: block;
-      font-size: 1rem;
-      font-family: var(--font-family-primary);
-      color: #00214d;
-      margin-bottom: 8px;
+      font-size: $font-size-sm;
+      color: $font-color-primary;
+      margin-bottom: $spacing-md;
     }
   
     &__input,
     &__textarea {
       width: 100%;
-      padding: 10px;
-      font-size: 1rem;
-      font-family: var(--font-family-primary);
-      border: 1px solid #ccc;
+      padding: $spacing-md;
+      font-size: $font-size-sm;
+      border: 1px solid $color-gray;
       border-radius: $border-radius-sm;
     }
   
@@ -56,18 +74,17 @@
     }
   
     &__button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-family: var(--font-family-primary);
-      color: #ffffff;
-      background-color: #1e98a8;
+      padding: $spacing-sm $spacing-lg;
+      font-size: $font-size-sm;
+      color: $font-color-primary;
+      background-color: $color-secondary;
       border: none;
       border-radius: $border-radius-sm;
       cursor: pointer;
       transition: background-color 0.3s ease;
   
       &:hover {
-        background-color: #00214d;
+        background-color: darken($color-secondary, 10%);
       }
     }
   }

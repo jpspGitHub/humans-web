@@ -5,6 +5,8 @@ $color-secondary: #1e98a8;
 $color-white: #ffffff;
 $color-gray: #bfc0c2;
 $color-dark-gray: #4a4a4a; 
+$color-light-gray: #e0e0e0;
+
 // Spacing
 $base-spacing: 8px;
 
@@ -16,11 +18,11 @@ $spacing-lg: $base-spacing * 3;  // 24px
 $spacing-xl: $base-spacing * 4;  // 32px
 
 // Font Sizes
-$font-size-xs: 12px;
-$font-size-sm: 14px;
-$font-size-md: 16px;
-$font-size-lg: 20px;
-$font-size-xl: 24px;
+$font-size-xs: 14px;
+$font-size-sm: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
 $font-size-xxl: 48px;
 
 // Font Colors (Contrasting)
