@@ -1,0 +1,24 @@
+.companies {
+  padding: $spacing-xl $spacing-lg;
+  background-color: $color-neutral;
+
+  &__container {
+    max-width: $content-width;
+    margin: 0 auto;
+    color: $color-primary;
+  }
+
+  &__title {
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-md;
+  }
+
+  &__list {
+    list-style: disc;
+    padding-left: $spacing-lg;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
