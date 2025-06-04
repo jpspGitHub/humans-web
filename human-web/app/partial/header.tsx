@@ -33,9 +33,11 @@ const Header: React.FC = () => {
         </button>
         <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
           <ul>
-            <li>Quienes somos?</li>
-            <li>Nuestros Servicios</li>
-            <li>Contactanos</li>
+            <li><Link href="/about">Quienes Somos</Link></li>
+            <li><Link href="/methodology">Metodología</Link></li>
+            <li><Link href="/trainings">Capacitaciones</Link></li>
+            <li><Link href="/companies">Empresas</Link></li>
+            <li><Link href="/contact">Contacto</Link></li>
           </ul>
         </nav>
         <nav className={`header__social-nav`}>
