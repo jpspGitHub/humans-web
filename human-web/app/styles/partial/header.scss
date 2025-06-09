@@ -1,24 +1,21 @@
 .header {
   width: 100%;
-  background-color: $color-primary;
-  color: $color-white;
+  color: $font-color-primary;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-lg 0;
 
   &__content {
+    border: 1px solid $color-neutral;
     max-width: $content-width;
-    margin: 0 auto;
-    padding: 0 $spacing-md;
+    border-radius: $border-radius-md;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $spacing-md;
   }
 
-  &__logo a {
-    // font-size: 1.5rem;
-    font-family: $font-family-primary;
-    color: $color-white;
-    text-decoration: none;
-  }
 
   &__nav {
     ul {
@@ -31,48 +28,8 @@
       padding: $spacing-md;
       border-radius: $spacing-sm;
       &:hover {
-        color: $color-secondary;
+        color: $color-light-neutral;
         cursor: pointer;
-        background-color: rgba($color: #000000, $alpha: .2);
-      }
-    }
-
-    /* Hide navigation by default on small screens */
-    @media (max-width: 768px) {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: $color-primary;
-      width: 100%;
-      padding: 16px;
-
-      &--open {
-        display: flex;
-      }
-
-      ul {
-        flex-direction: column;
-        gap: $spacing-sm;
-      }
-    }
-  }
-
-  &__social-nav {
-    ul {
-      display: flex;
-      list-style: none;
-      gap: $spacing-md;
-    }
-
-    li {
-      border-radius: $spacing-sm;
-      font-size: $font-size-xl;
-      &:hover {
-        color: $color-secondary;
-        cursor: pointer;
-        background-color: rgba($color: #000000, $alpha: .2);
       }
     }
 
@@ -107,7 +64,7 @@
     &-line {
       width: 24px;
       height: 2px;
-      background-color: $color-white;
+      background-color: $color-neutral;
       margin: 4px 0;
     }
 

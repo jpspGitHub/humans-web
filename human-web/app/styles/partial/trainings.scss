@@ -1,33 +1,63 @@
 .trainings {
   padding: $spacing-xl $spacing-lg;
-  background-color: $color-white;
+  background-color: $color-neutral;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 
-  &__container {
-    max-width: $content-width;
-    margin: 0 auto;
-  }
 
   &__title {
-    color: $color-primary;
-    font-size: $font-size-xl;
-    margin-bottom: $spacing-lg;
+    @include headers(-6.9em, $color-neutral,$font-color-light-neutral)
+  }
+
+  &__container {
+    @include containers($font-color-primary-accent);
   }
 
   &__blocks {
-    display: grid;
-    gap: $spacing-lg;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2em 0;
+    justify-content: space-around;
+    text-align: left;
   }
 
   &__block {
-    background-color: $color-neutral;
+    padding: 1.75em 1.75em 0.1em 1.75em;
+    background-color: $color-light-neutral;
+    margin-bottom: 1.5em;
+    width: calc(50% - 1em);
     border-radius: $border-radius-md;
     padding: $spacing-lg;
+    color: $font-color-light-neutral;
 
     &-title {
-      font-size: $font-size-lg;
-      color: $color-primary;
-      margin-bottom: $spacing-sm;
+      // font-size: $font-size-lg;
+      padding-bottom: $spacing-md;
+      border-bottom: solid 2px $font-color-light-neutral;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin: 0 0 1em 0;
+      text-transform: uppercase;
+    }
+
+    &-image {
+      border-radius: $border-radius-md $border-radius-md 0 0;
+      display: block;
+      margin-bottom: 1.75em;
+      margin-left: -1.5em;
+      margin-top: -1.75em;
+      position: relative;
+      width: calc(100% + 3em);
+
+      img {
+        border-radius: $border-radius-md $border-radius-md 0 0;
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
     ul {
@@ -38,5 +68,33 @@
         margin-bottom: $spacing-xs;
       }
     }
+
+    &-button {
+      margin: $spacing-md 0;
+      color: $font-color-light-neutral;
+      width: fit-content;
+      border: none;
+      cursor: pointer;
+      transition: opacity .4s ease;
+      font-weight: 700;
+      display: flex;
+
+
+      svg {
+        width: $font-size-xl;
+      }
+
+      span {
+        margin-left: $spacing-sm;
+        padding-top: .65em;
+      }
+
+      &:hover {
+        opacity: 0.9;
+        color: $color-neutral;
+      }
+    }
   }
+
+
 }

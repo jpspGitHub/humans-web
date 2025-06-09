@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className='header__content'>
-        <div className="header__logo">
+        {/* <div className="header__logo">
           <Link href="/">
             <Image
               src={logo}
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
               height={50}
             />
           </Link>
-        </div>
+        </div> */}
         <button className="header__hamburger" onClick={toggleMenu} aria-label="Toggle menu">
           <span className="header__hamburger-line">-</span>
           <span className="header__hamburger-line">-</span>
@@ -40,13 +40,13 @@ const Header: React.FC = () => {
             <li><Link href="/contact">Contacto</Link></li>
           </ul>
         </nav>
-        <nav className={`header__social-nav`}>
+        {/* <nav className={`header__social-nav`}>
           <ul>
             <li><Link href={''} ><FontAwesomeIcon icon={faSquareInstagram} /></Link></li>
             <li><Link href={''} ><FontAwesomeIcon icon={faLinkedin} /></Link></li>
             <li><Link href={''} ><FontAwesomeIcon icon={faSquareXTwitter} /></Link></li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );

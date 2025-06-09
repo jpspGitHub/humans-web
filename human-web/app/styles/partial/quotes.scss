@@ -1,9 +1,9 @@
 .quotes {
     padding: $spacing-xl $spacing-lg;
-    background-color: $color-gray;
+    background-color: $color-neutral;
     color: $font-color-gray;
     text-align: center;
-    box-shadow: 0px 0px 8px 0px $color-dark-gray;
+    box-shadow: 0px 0px 8px 0px $color-neutral;
   
     &__container {
       max-width: $content-width;
@@ -11,31 +11,31 @@
     }
   
     &__phrase {
-      font-size: $font-size-lg;
+      // font-size: $font-size-lg;
       font-style: italic;
       margin-bottom: $spacing-md;
       color: $font-color-white;
   
       @media (max-width: 768px) {
-        font-size: $font-size-xl;
+        // font-size: $font-size-xl;
       }
   
       @media (max-width: 480px) {
-        font-size: $font-size-lg;
+        // font-size: $font-size-lg;
       }
     }
   
     &__author {
-      font-size: $font-size-xl;
+      // font-size: $font-size-xl;
       font-weight: bold;
-      color: $color-secondary;
+      color: $color-primary-accent;
   
       @media (max-width: 768px) {
-        font-size: $font-size-lg;
+        // font-size: $font-size-lg;
       }
   
       @media (max-width: 480px) {
-        font-size: $font-size-md;
+        // font-size: $font-size-md;
       }
     }
   }

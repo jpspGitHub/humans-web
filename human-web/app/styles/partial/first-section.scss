@@ -15,7 +15,7 @@
   &__column {
     flex: 1 1 calc(33.333% - 20px); // 3 columns with space between
     max-width: calc(33.333% - 20px);
-    background-color: $color-white;
+    background-color: $color-neutral;
     padding: 20px;
     text-align: center;
     border-radius: $border-radius-md;
@@ -43,13 +43,13 @@
   }
 
   &__title {
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
     margin-bottom: 8px;
     color: $color-primary;
   }
 
   &__description {
-    font-size: 1rem;
-    color: $color-dark-gray;
+    // font-size: 1rem;
+    color: $color-neutral;
   }
 }

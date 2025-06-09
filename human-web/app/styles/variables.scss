@@ -1,14 +1,10 @@
 $content-width: 1200px;
 // Colors
 $color-primary: #00214d;
-$color-secondary: #1e98a8;
-$color-secondary-accent: #629941;
+$color-primary-accent: #1E98a8;
+$color-secondary-accent: #629841;
 $color-neutral: #d9d9d9;
 $color-light-neutral: #ffffff;
-$color-white: #ffffff;
-$color-gray: #bfc0c2;
-$color-dark-gray: #4a4a4a; 
-$color-light-gray: #e0e0e0;
 
 // Spacing
 $base-spacing: 8px;
@@ -21,18 +17,24 @@ $spacing-lg: $base-spacing * 3;  // 24px
 $spacing-xl: $base-spacing * 4;  // 32px
 
 // Font Sizes
-$font-size-xs: 14px;
-$font-size-sm: 16px;
-$font-size-md: 20px;
-$font-size-lg: 24px;
-$font-size-xl: 32px;
-$font-size-xxl: 48px;
+$font-size-xs: 16px;
+$font-size-sm: 20px;
+$font-size-md: 24px;
+$font-size-lg: 32px;
+$font-size-xl: 48px;
+$font-size-xxl: 52px;
 
 // Font Colors (Contrasting)
-$font-color-primary: $color-white;       // Contrasts with $color-primary
-$font-color-secondary: $color-white;    // Contrasts with $color-secondary
-$font-color-white: $color-primary;      // Contrasts with $color-white
+$font-color-primary: $color-neutral;       // Contrasts with $color-primary
+$font-color-secondary: $color-neutral;    // Contrasts with $color-secondary
+$font-color-white: $color-primary;      // Contrasts with $color-neutral
 $font-color-gray: $color-primary;       // Contrasts with $color-gray
+
+$font-color-primary: $color-light-neutral;
+$font-color-primary-accent: $color-light-neutral;
+$font-color-secondary-accent: $color-neutral;
+$font-color-neutral: $color-primary;
+$font-color-light-neutral: $color-primary;
 
 // Border Radius
 $border-radius-sm: 4px;
@@ -40,4 +42,7 @@ $border-radius-md: 8px;
 $border-radius-lg: 16px;
 
 // Font Family
-$font-family-primary: 'Roboto', sans-serif;
+$font-family-primary: 'Cooper Hewitt', sans-serif;
+$font-family-title: 'Anton', sans-serif;
+$font-family-brand: 'Glaser Stencil', sans-serif; // Confirmar por licencia
+  

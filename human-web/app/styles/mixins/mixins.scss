@@ -1,9 +1,66 @@
-@mixin container {
-    .container {
-      max-width: $max-width;
-      margin: 0 auto;
-      padding: 0 $spacing-md;
-      width: 100%;
-    }
+@mixin headers($positionY, $backgroundColor, $textColor) {
+  background-color: $backgroundColor;
+  margin: 0 auto;
+  color: $textColor;
+  margin-top: $positionY;
+  padding: $spacing-md;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: absolute;
+  margin-bottom: $spacing-sm;
+  padding-bottom: $spacing-sm;
+
+  @media (max-width: 768px) {
+    // font-size: $font-size-xl;
   }
-  
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: -35px;
+    width: 35px;
+    height: 38px;
+    background: url("./../../../public/images/shadow.png");
+  }
+
+  &::after {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: -35px;
+    width: 35px;
+    height: 38px;
+    background: url("./../../../public/images/shadow.png");
+  }
+}
+
+@mixin containers($fontColor) {
+  max-width: $content-width;
+  color: $fontColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: $spacing-xl auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack content on smaller screens
+  }
+}
+
+@mixin base-section($background-color){
+  padding: $spacing-xl $spacing-lg;
+  background-color: $background-color;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+
+}

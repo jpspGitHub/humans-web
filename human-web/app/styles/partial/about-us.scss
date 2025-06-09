@@ -1,16 +1,24 @@
 .about-us {
   padding: $spacing-xl $spacing-lg;
-  background-color: $color-primary;
+  background-color: $color-light-neutral;
   width: 100%;
+  text-align: center;
 
   &__container {
-    max-width: $content-width;
-    margin: 0 auto;
-    display: flex;
-    gap: $spacing-md;
+    // max-width: $content-width;
+    // display: flex;
+    // gap: $spacing-md;
+    // flex-direction: column; // Stack content vertically on larger screens
+    // align-items: center; // Center content horizontally
+    // margin: $spacing-xl auto;
 
-    @media (max-width: 768px) {
-      flex-direction: column; // Stack content on smaller screens
+    // @media (max-width: 768px) {
+    //   flex-direction: column; // Stack content on smaller screens
+    // }
+    @include containers($font-color-primary-accent);
+
+    &__title {
+      @include headers(-8em, $color-light-neutral, $font-color-light-neutral)
     }
 
     &-header {
@@ -27,24 +35,15 @@
     }
   }
 
-  &__image {
-    flex: 1;
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: $border-radius-md;
-    }
-  }
-
   &__content {
     flex: 1;
-    text-align: left;
-    color: $color-white; // Ensure text is readable on dark background
+    color: $font-color-neutral; // Ensure text is readable on dark background
     padding: 0 $spacing-xl;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-xl;
 
     @media (max-width: 768px) {
       text-align: left;
@@ -52,54 +51,56 @@
   }
 
   &__title {
-    font-size: $font-size-xxl;
-    color: $color-white;
+    // font-size: $font-size-xxl;
+    color: $font-color-neutral;
     margin-bottom: $spacing-sm;
-    border-bottom: 1px solid $color-gray;
     padding-bottom: $spacing-sm;
+
     @media (max-width: 768px) {
-      font-size: $font-size-xl;
+      // font-size: $font-size-xl;
 
     }
   }
 
   &__subtitle {
-    font-size: $font-size-lg;
-    color: $color-gray;
+    // font-size: $font-size-lg;
+    color: $font-color-neutral;
     margin-bottom: $spacing-md;
   }
 
   &__message {
-    font-size: $font-size-sm; // Slightly larger font size for better readability
+    // font-size: $font-size-sm; // Slightly larger font size for better readability
     line-height: 1.6; // Increase line height for better spacing between lines
-    color: $font-color-primary; // White text for readability
+    color: $font-color-neutral; // White text for readability
     margin-bottom: $spacing-lg;
 
     b {
-      font-weight: bold; // Ensure bold text stands out
-      color: $color-secondary; // Use secondary color for emphasis
+      font-weight: 300; // Ensure bold text stands out
+      color: $color-primary-accent; // Use secondary color for emphasis
+
     }
 
     @media (max-width: 768px) {
-      font-size: $font-size-sm; // Adjust font size for smaller screens
+      // font-size: $font-size-sm; // Adjust font size for smaller screens
       line-height: 1.5; // Slightly reduce line height on smaller screens
     }
   }
 
 
   &__button {
-    padding: $font-size-md $font-size-xl;
-    font-size: $font-size-md;
-    color: $font-color-primary;
+    padding: $font-size-sm $font-size-md;
+    // font-size: $font-size-sm;
+    color: $font-color-primary-accent;
     width: fit-content;
     border: none;
     border-radius: $border-radius-sm;
+    background-color: $color-primary-accent;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: opacity .4s ease;
 
     &:hover {
-      background-color: rgba(#000000, .7); // Change to secondary color on hover
-      color: $color-white; // White text on hover
+      opacity: 0.8;
+      color: $color-neutral;
     }
   }
 }
