@@ -9,37 +9,25 @@ const AboutUs: React.FC = () => {
   return (
     <section className="about-us">
       <div className="about-us__container">
-        <div className="about-us__image">
-            <Image
-              src={aboutImage}
-              alt="Quienes somos?"
-              width={200}
-              height={100}
-              className="about-us__image"
-            />
+        <div className='about-us__container__title'>
+          <h1 className="about-us__title">Quienes somos?</h1>
         </div>
         <div className="about-us__content">
           <div className="about-us__content-header">
-            <h2 className="about-us__title">Quienes somos?</h2>
-            <h3 className="about-us__subtitle">Formando personas listas para responder ante lo imprevisto.</h3>
+            <h2 className="about-us__subtitle">En <b>Human</b> creemos que la preparación puede marcar la diferencia entre la vida y la muerte.</h2>
           </div>
-          <p className="about-us__message">
-            <b>HUMAN</b> es un centro dedicado a la
-            capacitación y entrenamiento de
-            la más alta calidad profesional en
-            primeros auxilios, reanimación
-            cardiopulmonar (RCP) y seguridad
-            acuática.
-            <br />
-            <br />
-            Nuestro compromiso es proporcionar instrucción, formación y
-            entrenamiento especializado para que la comunidad adquiera habilidades
-            efectivas en situaciones de emergencia. Para ello, contamos con un
-            equipo docente altamente calificado y con reconocida trayectoria en
-            Uruguay, comprometidos en mejorar la respuesta ante emergencias
-            médicas y acuáticas.
-          </p>
-          <Link className="about-us__button" href={'#'}>Averigua más! <FontAwesomeIcon icon={faArrowRight} /></Link>
+          <div className="about-us__message">
+            <p> Somos un centro de capacitación especializado en primeros auxilios, soporte vital básico,
+              rescate acuático y entrenamiento técnico en natación. Nuestra misión es formar personas y
+              equipos capaces de actuar con seguridad y eficacia frente a una emergencia.
+            </p>
+            <br/>
+            <p><b>Nuestra misión</b> Formar personas y equipos capaces de actuar con seguridad y eficacia frente
+              a una emergencia.</p>
+            <p><b>Nuestra visión</b> Una sociedad donde todos estén preparados para ayudar.</p>
+            <p><b>Nuestros valores</b> Compromiso, responsabilidad, claridad, profesionalismo y acción.</p>
+          </div>
+          <Link className="about-us__button" href={'#'}>Averigua más! </Link>
         </div>
       </div>
     </section>

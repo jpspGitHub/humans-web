@@ -9,7 +9,7 @@
   }
 
   &__title {
-    font-size: $font-size-xl;
+    // font-size: $font-size-xl;
     margin-bottom: $spacing-lg;
   }
 
@@ -20,7 +20,7 @@
   }
 
   &__item {
-    background-color: $color-white;
+    background-color: $color-neutral;
     border-radius: $border-radius-md;
     padding: $spacing-md;
   }

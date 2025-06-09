@@ -1,0 +1,17 @@
+.parallax-container {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+  
+    .parallax-content {
+    //   background-color: rgba(0, 0, 0, 0.5); // opcional: para mejorar legibilidad
+    //   padding: 2rem;
+    //   border-radius: 10px;
+    }
+  }

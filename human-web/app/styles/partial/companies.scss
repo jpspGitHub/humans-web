@@ -1,20 +1,22 @@
 .companies {
-  padding: $spacing-xl $spacing-lg;
-  background-color: $color-neutral;
+  // padding: $spacing-xl $spacing-lg;
+  // background-color: $color-neutral;
+  @include base-section($color-primary);
 
   &__container {
-    max-width: $content-width;
-    margin: 0 auto;
-    color: $color-primary;
+    @include containers($font-color-primary);
   }
 
   &__title {
-    font-size: $font-size-xl;
-    margin-bottom: $spacing-md;
+    @include headers(-6.6em, $color-primary, $font-color-primary)
+  }
+
+  &__description {
+    margin-top: $spacing-xl;
+
   }
 
   &__list {
-    list-style: disc;
     padding-left: $spacing-lg;
 
     li {
