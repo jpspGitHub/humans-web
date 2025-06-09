@@ -1,9 +1,5 @@
-import Image from 'next/image';
 import React from 'react';
-import aboutImage from './../../public/images/about-us.jpg';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs: React.FC = () => {
   return (
