@@ -1,14 +1,12 @@
 .companies {
-  // padding: $spacing-xl $spacing-lg;
-  // background-color: $color-neutral;
-  @include base-section($color-primary);
+  @include base-section($color-light-neutral);
 
   &__container {
-    @include containers($font-color-primary);
+    @include containers($font-color-light-neutral);
   }
 
   &__title {
-    @include headers(-6.6em, $color-primary, $font-color-primary)
+    @include headers(-6.6em, $color-light-neutral, $font-color-light-neutral)
   }
 
   &__description {

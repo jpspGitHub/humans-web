@@ -5,14 +5,16 @@ import Footer from "./partial/footer";
 import Methodology from "./partial/methodology";
 import Trainings from "./partial/trainings";
 import Companies from "./partial/companies";
+import Header from "./partial/header";
 
 export default function Home() {
   return (
     <div>
-      <MainCover />
+      <Header />
+      {/* <MainCover /> */}
       <AboutUs />
-      <Methodology />
       <Trainings />
+      <Methodology />
       <Companies />
       <ContactUs />
       <Footer />

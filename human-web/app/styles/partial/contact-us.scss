@@ -1,90 +1,93 @@
 .contact-us {
-  background-color: $color-light-neutral;
-  width: 100%;
-  padding: $spacing-xl $spacing-lg;
-  
-    &__container {
-      max-width: $content-width;
-      margin: 0 auto;
-      text-align: center;
-    }
-  
-    &__title {
-      // font-size: $font-size-xxl;
-      color: $color-primary;
-      margin-bottom: $spacing-md;
-    }
-  
-    &__description {
-      // font-size: $font-size-md;
-      color: $color-neutral;
-      margin-bottom: $spacing-xl;
-    }
-  
-    &__content{
-      display: flex;
-      border-radius: $border-radius-md;
-    }
+  // background-color: $color-light-neutral;
+  // width: 100%;
+  // padding: $spacing-xl $spacing-lg;
+  @include base-section($color-neutral);
 
-    &__form {
-      display: flex;
-      flex-direction: column;
-      gap: $spacing-md;
-      width: 50%;
-      margin: $spacing-lg;
-      padding: $spacing-lg;
-      background-color: rgba($color: #000000, $alpha: .7);
-      border-radius: $border-radius-md;
-    }
+  &__container {
+    // max-width: $content-width;
+    // margin: 0 auto;
+    // text-align: center;
+    @include containers($color-neutral);
 
-    &__image {
-      width: 50%;
+  }
 
-      img {
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: $border-radius-md;
-        border-bottom-right-radius: $border-radius-md;
-      }
-    }
-  
-    &__form-group {
-      text-align: left;
-    }
-  
-    &__label {
-      display: block;
-      // font-size: $font-size-sm;
-      color: $font-color-primary;
-      margin-bottom: $spacing-md;
-    }
-  
-    &__input,
-    &__textarea {
-      width: 100%;
-      padding: $spacing-md;
-      // font-size: $font-size-sm;
-      border: 1px solid $color-neutral;
-      border-radius: $border-radius-sm;
-    }
-  
-    &__textarea {
-      resize: vertical;
-      height: 100px;
-    }
-  
-    &__button {
-      padding: $spacing-sm $spacing-lg;
-      // font-size: $font-size-sm;
-      color: $font-color-primary;
-      background-color: $color-primary-accent;
-      border: none;
-      border-radius: $border-radius-sm;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: darken($color-secondary-accent, 10%);
-      }
+  &__title {
+    @include headers(-2.1em, $color-neutral, $font-color-neutral) // font-size: $font-size-xxl;
+    // color: $color-primary;
+    // margin-bottom: $spacing-md;
+  }
+
+  &__description {
+    // font-size: $font-size-md;
+    color: $font-color-neutral;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__content {
+    display: flex;
+    border-radius: $border-radius-md;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    width: 50%;
+    margin: $spacing-lg;
+    padding: $spacing-lg;
+    // background-color: rgba($color: #000000, $alpha: .7);
+    border-radius: $border-radius-md;
+  }
+
+  // &__image {
+  //   width: 50%;
+
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //     border-top-right-radius: $border-radius-md;
+  //     border-bottom-right-radius: $border-radius-md;
+  //   }
+  // }
+
+  &__form-group {
+    text-align: left;
+  }
+
+  &__label {
+    display: block;
+    // font-size: $font-size-sm;
+    color: $font-color-neutral;
+    margin-bottom: $spacing-md;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: $spacing-md;
+    // font-size: $font-size-sm;
+    border: 1px solid $color-neutral;
+    border-radius: $border-radius-sm;
+  }
+
+  &__textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  &__button {
+    padding: $spacing-sm $spacing-lg;
+    // font-size: $font-size-sm;
+    color: $font-color-primary;
+    // background-color: $color-primary-accent;
+    border: none;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-secondary-accent, 10%);
     }
   }
+}

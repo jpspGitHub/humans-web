@@ -1,9 +1,9 @@
 'use client';
-import Header from '../partial/header';
-import Trainings from '../partial/trainings';
-import Footer from '../partial/footer';
+import Header from '../../partial/header';
+import Trainings from '../../partial/trainings';
+import Footer from '../../partial/footer';
 import { useParams } from 'next/navigation';
-import { trainingsSource } from '../data/trainingsSource';
+import { trainingsSource } from '../../data/trainingsSource';
 
 export default function TrainingsPage() {
   var { id } = useParams();

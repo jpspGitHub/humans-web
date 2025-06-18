@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
             <p><b>Nuestra visión</b> Una sociedad donde todos estén preparados para ayudar.</p>
             <p><b>Nuestros valores</b> Compromiso, responsabilidad, claridad, profesionalismo y acción.</p>
           </div>
-          <Link className="about-us__button" href={'#'}>Averigua más! </Link>
+          <Link className="about-us__button" href={'/about'}>Averigua más! </Link>
         </div>
       </div>
     </section>
