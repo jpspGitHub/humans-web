@@ -6,6 +6,7 @@
     margin: 0 0 2em 0;
     justify-content: space-around;
     text-align: left;
+    
   }
 
   &__block {
@@ -18,6 +19,8 @@
     color: $font-color-light-neutral;
     position: relative;
     height: 55vh;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
+
 
     &-title {
       padding-bottom: $spacing-md;

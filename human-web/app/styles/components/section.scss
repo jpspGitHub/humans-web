@@ -110,8 +110,9 @@
 
     &__image {
         width: 100%;
-
+        
         img {
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
             width: 100%;
             margin-top: $spacing-xl;
             object-fit: cover;

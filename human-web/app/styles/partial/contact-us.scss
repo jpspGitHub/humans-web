@@ -11,6 +11,7 @@
     padding: $spacing-lg;
     background-color: $color-light-neutral;
     border-radius: $border-radius-md;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
   }
 
   &__social{
@@ -22,7 +23,8 @@
     background-color: $color-light-neutral;
     border-radius: $border-radius-md;
     color: $font-color-neutral;
-
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
+    
     &__icon {
       height: 50px;
       margin-right: $spacing-sm;
