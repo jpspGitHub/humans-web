@@ -2,7 +2,7 @@ import { faArrowUpShortWide, faDiamond, faHandPointUp } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const FirstSection: React.FC = () => {
+const FirstSection = () => {
   const columns = [
     {
       icon: <FontAwesomeIcon className='first-section__icon' icon={faArrowUpShortWide} />,

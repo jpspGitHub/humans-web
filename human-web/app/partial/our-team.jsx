@@ -37,7 +37,7 @@ const teamMembers = [
   },
 ];
 
-const OurTeam: React.FC = () => {
+const OurTeam = () => {
   return (
     <section className="our-team">
       <div className="our-team__content">

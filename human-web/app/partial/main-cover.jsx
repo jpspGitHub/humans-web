@@ -2,7 +2,7 @@ import React from 'react';
 import image2 from './../../public/images/cover-2.jpg';
 import Header from './header';
 
-const MainCover: React.FC = () => {
+const MainCover = () => {
     const background = {
         title: 'Preparados para actuar, entrenados para salvar.',
         subtitle: 'Capacitaciones en primeros auxilios, soporte vital básico, rescate acuático y entrenamiento en natación técnica.',

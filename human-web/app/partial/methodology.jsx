@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import education from './../../public/images/education.jpg';
+import Button from '../components/button';
 
-const Methodology: React.FC = () => {
+const Methodology = () => {
   return (
     <section className="methodology">
       <div className="methodology__container">
@@ -27,7 +28,7 @@ const Methodology: React.FC = () => {
             <li>Modalidades de cursado: presencial, online, híbrido</li>
           </ul>
         </div>
-
+        <Button className={'natural'} href={'/methodology'}>Descubre más!</Button>
       </div>
     </section>
 

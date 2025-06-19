@@ -1,37 +1,10 @@
 import React from 'react';
-import backgroundImage from './../../public/images/contact.jpg';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
+import Button from '../components/button';
+import { contactSource } from '../data/contactSource';
 
-const contactData = [
-  {
-    icon: <FontAwesomeIcon className='first-section__icon' icon={faWhatsapp} />,
-    data: [
-      '(+598) 99 999 999',
-    ],
-  },
-  {
-    icon: <FontAwesomeIcon className='first-section__icon' icon={faPhone} />,
-    data: [
-      '(+598) 99 999 999',
-    ],
-  },
-  {
-    icon: <FontAwesomeIcon className='first-section__icon' icon={faInstagram} />,
-    data: [
-      '(+598) 99 999 999',
-    ],
-  },
-  {
-    icon: <FontAwesomeIcon className='first-section__icon' icon={faLinkedin} />,
-    data: [
-      '(+598) 99 999 999',
-    ],
-  }
-]
 
-const ContactUs: React.FC = () => {
+export default function ContactUs(){
   return (
     <section className="contact-us">
       <div className="contact-us__container">
@@ -54,26 +27,26 @@ const ContactUs: React.FC = () => {
               <textarea id="message" className="contact-us__textarea" placeholder="Tú Mensaje"></textarea>
             </div>
             <button type="submit" className="contact-us__button">Enviar Mensaje</button>
+            <Button type="reset" className="contact-us__button contact-us__button--reset">Limpiar</Button> 
           </form>
           <div className="contact-us__social">
-            {/* {contactData.map((item, index) => (
+            {contactSource.map((item, index) => (
               <div>
-                <div className="contact-us__social-item" key={index}>
+                <div className="contact-us__social-item" key={`contact_${index}`}>
                   {item.icon}
                   <ul className="contact-us__social-list">
                     {item.data.map((data, idx) => (
-                      <li key={idx} className="contact-us__social-data">{data}</li>
+                      <li key={idx} className="contact-us__social-data">
+                        <Link target="_blank" href={data.value}>{data.text}</Link>
+                      </li>
                     ))}
                   </ul>
                 </div>
               </div>
-
-            )} */}
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-export default ContactUs;

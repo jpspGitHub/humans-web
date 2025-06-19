@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { trainingsSource } from '../data/trainingsSource';
 
-const Trainings: React.FC = () => {
+const Trainings = () => {
   return (
     <section className="trainings">
       <div className="trainings__container">

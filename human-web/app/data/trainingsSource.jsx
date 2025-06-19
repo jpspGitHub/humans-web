@@ -7,8 +7,6 @@ import ApoyoEmocionalEmergencias from '../trainings/pages/apoyo_emocional_emerge
 import UrgenciasAcuáticas from '../trainings/pages/urgencias_acuáticas';
 import ProgramaBirdie from '../trainings/pages/programa_birdie';
  
-
-
 export const trainingsSource = [
     {
         id: 1,

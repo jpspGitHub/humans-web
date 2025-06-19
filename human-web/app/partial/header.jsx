@@ -1,15 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import image2 from './../../public/images/cover-2.jpg';
-
-const Header: React.FC = ({}) => {
+import Image from 'next/image';
+import logo from './../../public/images/LOGO CENTRO HUMAN (3).svg'
+const Header = ({ title, subtitle, image, fullScreen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const background = {
-    title: 'Preparados para actuar, entrenados para salvar.',
-    subtitle: 'Capacitaciones en primeros auxilios, soporte vital básico, rescate acuático y entrenamiento en natación técnica.',
-    backgroundImage: image2
-  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -17,7 +12,7 @@ const Header: React.FC = ({}) => {
   return (
     <div
       className="main-cover"
-      style={{ backgroundImage: `url(${background.backgroundImage.src})` }}
+      style={{ backgroundImage: `url(${image?.src})`, height: fullScreen ? '100vh' : '50vh' }}
     >
       <div className="main-cover__overlay"></div>
       <header className="header">
@@ -39,8 +34,15 @@ const Header: React.FC = ({}) => {
         </div>
       </header>
       <div className='main-cover__content'>
-        <h1 className="main-cover__content__title">{background.title}</h1>
-        <p className="main-cover__content__subtitle">{background.subtitle}</p>
+        <Image
+          src={logo.src}
+          alt={'Centro Human Logo'}
+          className="main-cover__content__image"
+          width={fullScreen ? 500 : 200}
+          height={fullScreen ? 500 : 200}
+        />
+        <h1 className="main-cover__content__title">{title}</h1>
+        <p className="main-cover__content__subtitle">{subtitle}</p>
       </div>
 
     </div>

@@ -7,7 +7,7 @@ import education from './../../public/images/education.jpg';
 import firstAid from './../../public/images/first-aid.jpg';
 import waterSafety from './../../public/images/water-safty.jpg';
 import Link from 'next/link';
-const Services: React.FC = () => {
+const Services = () => {
   const services = [
     {
       image: education,

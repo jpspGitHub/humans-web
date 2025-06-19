@@ -1,0 +1,28 @@
+.button {
+  padding: $font-size-sm $font-size-md;
+  border-radius: $border-radius-sm;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  transition: opacity .4s ease;
+  
+  &.accent {
+    color: $font-color-primary-accent;
+    background-color: $color-primary-accent;
+  }
+
+  &.primary {
+    color: $font-color-primary;
+    background-color: $color-primary;
+  }
+  
+  &.natural {
+    color: $font-color-neutral;
+    background-color: $color-neutral;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-neutral;
+  }
+}

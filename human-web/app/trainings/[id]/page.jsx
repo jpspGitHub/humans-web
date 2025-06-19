@@ -4,6 +4,7 @@ import Trainings from '../../partial/trainings';
 import Footer from '../../partial/footer';
 import { useParams } from 'next/navigation';
 import { trainingsSource } from '../../data/trainingsSource';
+import ContactUs from '../../partial/contact-us';
 
 export default function TrainingsPage() {
   var { id } = useParams();
@@ -11,11 +12,11 @@ export default function TrainingsPage() {
 
   return (
     <div>
-      <Header />
+      <Header title={training.title} image={training.image}/>
       <>
         ({training?.page})
       </>
-      {/* <Trainings /> */}
+      <ContactUs />
       <Footer />
     </div>
   );

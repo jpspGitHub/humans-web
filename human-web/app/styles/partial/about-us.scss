@@ -5,16 +5,6 @@
   text-align: center;
 
   &__container {
-    // max-width: $content-width;
-    // display: flex;
-    // gap: $spacing-md;
-    // flex-direction: column; // Stack content vertically on larger screens
-    // align-items: center; // Center content horizontally
-    // margin: $spacing-xl auto;
-
-    // @media (max-width: 768px) {
-    //   flex-direction: column; // Stack content on smaller screens
-    // }
     @include containers($font-color-primary-accent);
 
     &__title {
@@ -83,24 +73,6 @@
     @media (max-width: 768px) {
       // font-size: $font-size-sm; // Adjust font size for smaller screens
       line-height: 1.5; // Slightly reduce line height on smaller screens
-    }
-  }
-
-
-  &__button {
-    padding: $font-size-sm $font-size-md;
-    // font-size: $font-size-sm;
-    color: $font-color-primary-accent;
-    width: fit-content;
-    border: none;
-    border-radius: $border-radius-sm;
-    background-color: $color-primary-accent;
-    cursor: pointer;
-    transition: opacity .4s ease;
-
-    &:hover {
-      opacity: 0.8;
-      color: $color-neutral;
     }
   }
 }

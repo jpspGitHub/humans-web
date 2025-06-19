@@ -15,7 +15,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials: React.FC = () => {
+const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="testimonials__container">

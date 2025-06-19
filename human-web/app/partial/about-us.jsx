@@ -1,12 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
+import Button from '../components/button';
 
-const AboutUs: React.FC = () => {
+const AboutUs = () => {
   return (
     <section className="about-us">
       <div className="about-us__container">
         <div className='about-us__container__title'>
-          <h1 className="about-us__title">Quienes somos?</h1>
+          <h1 className="about-us__title">¿Quienes somos?</h1>
         </div>
         <div className="about-us__content">
           <div className="about-us__content-header">
@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
             <p><b>Nuestra visión</b> Una sociedad donde todos estén preparados para ayudar.</p>
             <p><b>Nuestros valores</b> Compromiso, responsabilidad, claridad, profesionalismo y acción.</p>
           </div>
-          <Link className="about-us__button" href={'/about'}>Averigua más! </Link>
+          <Button className="accent" href={'/about'}>Averigua más!</Button>
         </div>
       </div>
     </section>

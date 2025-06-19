@@ -15,7 +15,7 @@ const questions = [
   },
 ];
 
-const FAQ: React.FC = () => {
+const FAQ = () => {
   return (
     <section className="faq">
       <div className="faq__container">

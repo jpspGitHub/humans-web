@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import education from './../../public/images/education.jpg';
+import Button from '../components/button';
 
-const Companies: React.FC = () => {
+const Companies = () => {
   return (
     <section className="companies">
       <div className="companies__container">
@@ -23,6 +24,7 @@ const Companies: React.FC = () => {
             <li>Contacto directo</li>
           </ul>
         </div>
+        <Button className={'primary'} href={'/companies'}>Descubre más!</Button>
       </div>
     </section>
   );
