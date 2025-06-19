@@ -14,7 +14,7 @@ export default function AboutPage() {
             Por eso, nos dedicamos a capacitar personas y equipos para que puedan actuar con
             seguridad, claridad y eficacia cuando cada segundo cuenta.`}
       >
-        <div className='about_content'>
+        <div className='page_content'>
           {/* <p>
             En Human creemos que estar preparado puede marcar la diferencia entre la vida y la muerte.
             Por eso, nos dedicamos a capacitar personas y equipos para que puedan actuar con
