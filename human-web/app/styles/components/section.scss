@@ -1,0 +1,123 @@
+.section {
+    width: 100%;
+    padding-bottom: 4em;
+
+    &--primary {
+        background-color: $color-primary;
+        color: $font-color-primary;
+    }
+
+    &--accent {
+        background-color: $color-primary-accent;
+        color: $font-color-primary-accent;
+    }
+
+    &--natural {
+        background-color: $color-neutral;
+        color: $font-color-neutral;
+    }
+
+    &--light {
+        background-color: $color-light-neutral;
+        color: $font-color-light-neutral;
+    }
+
+    &__container {
+        padding: $spacing-xl $spacing-lg;
+        width: $content-width;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+
+    }
+
+    &__title {
+        margin: 0 auto;
+        margin-top: 1em;
+        padding: $spacing-md;
+        text-transform: uppercase;
+        position: absolute;
+        margin-bottom: $spacing-sm;
+        padding-bottom: $spacing-sm;
+        top: -3.9em;
+
+        &--primary {
+            background-color: $color-primary;
+        }
+
+        &--accent {
+            background-color: $color-primary-accent;
+        }
+
+        &--natural {
+            background-color: $color-neutral;
+        }
+
+        &--light {
+            background-color: $color-light-neutral;
+        }
+
+        @media (max-width: 768px) {
+            // font-size: $font-size-xl;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: -35px;
+            width: 35px;
+            height: 38px;
+            background: url("./../../../public/images/shadow.png");
+        }
+
+        &::after {
+            -moz-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: -35px;
+            width: 35px;
+            height: 38px;
+            background: url("./../../../public/images/shadow.png");
+        }
+    }
+
+    &__subtitle {
+        margin: $spacing-md 0;
+        text-align: center;
+    }
+
+    &__content {
+        max-width: $content-width;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: $spacing-xl auto;
+
+        @media (max-width: 768px) {
+            flex-direction: column; // Stack content on smaller screens
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            width: 100%;
+            margin-top: $spacing-xl;
+            object-fit: cover;
+            border-radius: $border-radius-md;
+        }
+    }
+
+    &__actions {}
+}

@@ -5,6 +5,7 @@
   border: none;
   cursor: pointer;
   transition: opacity .4s ease;
+  margin-right: $font-size-sm;
   
   &.accent {
     color: $font-color-primary-accent;

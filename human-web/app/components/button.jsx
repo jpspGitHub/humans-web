@@ -8,7 +8,7 @@ export default function Button({ onClick, children, className, href }) {
         );
     } else {
         return (
-            <button className={className} onClick={onClick}>
+            <button className={`button ${className}`}onClick={onClick}>
                 {children}
             </button>
         );

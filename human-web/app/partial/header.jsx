@@ -39,7 +39,7 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
           alt={'Centro Human Logo'}
           className="main-cover__content__image"
           width={fullScreen ? 500 : 200}
-          height={fullScreen ? 500 : 200}
+          height={fullScreen ? 300 : 100}
         />
         <h1 className="main-cover__content__title">{title}</h1>
         <p className="main-cover__content__subtitle">{subtitle}</p>

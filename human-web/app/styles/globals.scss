@@ -3,8 +3,14 @@
 
 @font-face {
   font-family: 'Cooper Hewitt';
-  src: url('./../fonts/CooperHewitt/CooperHewitt-Thin.woff') format('woff');
+  src: url('./../fonts/CooperHewitt/CooperHewitt-Book.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('./../fonts/CooperHewitt/CooperHewitt-Medium.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -32,17 +38,9 @@ body {
 
 @import './mixins/mixins.scss';
 @import './components/button.scss';
+@import './components/section.scss';
 @import './partial/header.scss';
 @import './partial/main-cover.scss';
-@import './partial/first-section.scss';
-@import './partial/about-us.scss';
-@import './partial/quotes.scss';
-@import './partial/services.scss';
 @import './partial/contact-us.scss';
 @import './partial/footer.scss';
-@import './partial/our-team.scss';
-@import './partial/methodology.scss';
 @import './partial/trainings.scss';
-@import './partial/companies.scss';
-@import './partial/faq.scss';
-@import './partial/testimonials.scss';

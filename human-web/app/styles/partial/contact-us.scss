@@ -1,31 +1,13 @@
 .contact-us {
-  @include base-section($color-neutral);
-
-  &__container {
-    @include containers($color-neutral);
-  }
-
-  &__title {
-    @include headers(-2.1em, $color-neutral, $font-color-neutral);
-  }
-
-  &__description {
-    color: $font-color-neutral;
-    margin-bottom: $spacing-xl;
-  }
-
-  &__content {
-    display: flex;
-    border-radius: $border-radius-md;
-    width: 100%;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: $spacing-md;
     width: 66%;
-    margin: $spacing-lg;
     padding: $spacing-lg;
     background-color: $color-light-neutral;
     border-radius: $border-radius-md;
@@ -36,7 +18,6 @@
     flex-direction: column;
     gap: $spacing-md;
     width: 33%;
-    margin: $spacing-lg;
     padding: $spacing-lg;
     background-color: $color-light-neutral;
     border-radius: $border-radius-md;
@@ -81,16 +62,4 @@
     height: 100px;
   }
 
-  &__button {
-    padding: $spacing-sm $spacing-lg;
-    color: $font-color-primary;
-    border: none;
-    border-radius: $border-radius-sm;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: darken($color-secondary-accent, 10%);
-    }
-  }
 }
