@@ -4,12 +4,19 @@ export default function Section({ children, actions, title, subtitle, theme, ima
     return (
         <section className={`section ${theme ? ` section--${theme}` : ''}`}>
             <div className="section__container">
-                <div className={`section__title ${theme ? ` section--${theme}` : ''}`}>
-                    <h1>{title}</h1>
-                </div>
-                <div className="section__subtitle">
-                    <h3>{subtitle}</h3>
-                </div>
+                {
+                    title &&
+                    <div className={`section__title ${theme ? ` section--${theme}` : ''}`}>
+                        <h1>{title}</h1>
+                    </div>
+                }
+                {
+                    subtitle &&
+                    <div className="section__subtitle">
+                        <h3>{subtitle}</h3>
+                    </div>
+                }
+
                 {image && <div className="section__image">
                     <Image src={image.src} alt={`imagen ${title}`} width={800} height={200} />
                 </div>}
