@@ -29,8 +29,8 @@ export default function ContactUs() {
         </form>
         <div className="contact-us__social">
           {contactSource.map((item, index) => (
-            <div>
-              <div className="contact-us__social-item" key={`contact_${index}`}>
+            <div key={`contact_${index}`}>
+              <div className="contact-us__social-item">
                 {item.icon}
                 <ul className="contact-us__social-list">
                   {item.data.map((data, idx) => (

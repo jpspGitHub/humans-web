@@ -144,14 +144,38 @@ a {
 h1 {
   font-size: $font-size-xxl;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-xl;
+  }
+
+  @media (max-width: 480px) {
+    font-size: $font-size-lg;
+  }
 }
 
 h2 {
   font-size: $font-size-xl;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-lg;
+  }
+
+  @media (max-width: 480px) {
+    font-size: $font-size-md;
+  }
 }
 
 h3 {
   font-size: $font-size-lg;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-lg;
+  }
+
+  @media (max-width: 480px) {
+    font-size: $font-size-md;
+  }
 }
 
 h4 {

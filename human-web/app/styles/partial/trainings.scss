@@ -21,6 +21,13 @@
     height: 30em;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
 
+    // @media (max-width: 768px) {
+    //   font-size: $font-size-lg;
+    // }
+  
+    @media (max-width: 480px) {
+      width: 100%;
+    }
 
     &-title {
       padding-bottom: $spacing-md;

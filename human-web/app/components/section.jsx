@@ -23,7 +23,7 @@ export default function Section({ children, actions, title, subtitle, theme, ima
                 <div className="section__content">
                     {children}
                 </div>
-                <div className="section__acitons">
+                <div className="section__actions">
                     {
                         actions && actions.map((action, index) => (
 

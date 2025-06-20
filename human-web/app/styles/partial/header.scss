@@ -7,6 +7,9 @@
   justify-content: center;
   padding: $spacing-lg 0;
 
+  
+
+  
   &__content {
     border: 1px solid $color-neutral;
     max-width: $content-width;
@@ -14,6 +17,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+      border: none;
+    }
   }
 
 
@@ -27,6 +33,7 @@
     li {
       padding: $spacing-md;
       border-radius: $spacing-sm;
+
       &:hover {
         color: $color-light-neutral;
         cursor: pointer;
@@ -46,6 +53,7 @@
 
       &--open {
         display: flex;
+        z-index: 2;
       }
 
       ul {
@@ -60,6 +68,9 @@
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &-line {
       width: 24px;
@@ -68,8 +79,8 @@
       margin: 4px 0;
     }
 
-    @media (max-width: 768px) {
-      display: block;
-    }
+    // @media (max-width: 768px) {
+    //   display: block;
+    // }
   }
 }

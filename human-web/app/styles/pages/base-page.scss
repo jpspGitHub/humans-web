@@ -9,14 +9,35 @@
         margin-top: $spacing-lg;
     }
 
+    h4{
+        margin-top: $spacing-lg;
+    }
+
     p{
         letter-spacing: 0.05em;
         padding: $spacing-md 0;
     }
 
+    b{
+        color: $color-primary-accent;
+        font-weight: 600;
+    }
+
+    ul{
+        margin-top: $spacing-md; 
+        &.bulleted {
+            padding-left: $spacing-lg;
+            list-style: disc;
+        }
+
+        li {
+            margin-bottom: $spacing-md;
+        }
+    }
+
     .quote {
         font-style: italic;
-        margin: $spacing-md 0;
+        margin: $spacing-lg 0 $spacing-md 0;
         padding-left: $spacing-lg;
         border-left: solid 2px $font-color-primary;
     }

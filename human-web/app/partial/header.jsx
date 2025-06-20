@@ -12,7 +12,7 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
   return (
     <div
       className="main-cover"
-      style={{ backgroundImage: `url(${image?.src})`, height: fullScreen ? '100vh' : '50vh' }}
+      style={{ backgroundImage: `url(${image?.src})`, minHeight: fullScreen ? '100vh' : '50vh' }}
     >
       <div className="main-cover__overlay"></div>
       <header className="header">
@@ -24,6 +24,7 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
           </button>
           <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
             <ul>
+              <li><Link href="/">Inicio</Link></li>
               <li><Link href="/about">Quienes Somos</Link></li>
               <li><Link href="/methodology">Metodología</Link></li>
               <li><Link href="/trainings">Capacitaciones</Link></li>

@@ -1,6 +1,6 @@
 .section {
     width: 100%;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
 
     &--primary {
         background-color: $color-primary;
@@ -24,7 +24,8 @@
 
     &__container {
         padding: $spacing-xl $spacing-lg;
-        width: $content-width;
+        width: 100%;
+        max-width: $content-width;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -32,6 +33,13 @@
         position: relative;
         justify-content: center;
 
+        // @media (max-width: 768px) {
+        //     top: -2.6em;
+        // }
+
+        @media (max-width: 480px) {
+            padding: $spacing-md $spacing-sm;
+        }
     }
 
     &__title {
@@ -43,6 +51,14 @@
         margin-bottom: $spacing-sm;
         padding-bottom: $spacing-sm;
         top: -3.9em;
+
+        @media (max-width: 768px) {
+            top: -2.6em;
+        }
+
+        @media (max-width: 480px) {
+            top: -2.6em;
+        }
 
         &--primary {
             background-color: $color-primary;
@@ -110,7 +126,7 @@
 
     &__image {
         width: 100%;
-        
+
         img {
             box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
             width: 100%;
@@ -120,5 +136,10 @@
         }
     }
 
-    &__actions {}
+    &__actions {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }

@@ -4,7 +4,14 @@
   background-size: cover;
   background-position: center;
   transition: background-image 1s ease-in-out;
+  
+  @media (max-width: 768px) {
+    padding-bottom: $font-size-xxl;
+  }
 
+  @media (max-width: 480px) {
+    padding-bottom: $font-size-xxl;
+  }
   &__overlay {
     background-color: $color-primary;
     opacity: 0.8;
@@ -16,12 +23,15 @@
   &__content {
     display: flex;
     align-items: center;
-    //justify-content: space-around;
     flex-direction: column;
     height: 100%;
     width: 50vw;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+      width: 100vw;
+  }
 
     &__title {
       // font-size: $font-size-xxl;
@@ -48,7 +58,7 @@
       z-index: 1;
 
       @media (max-width: 768px) {
-        // font-size: $font-size-lg;
+        padding: 16px;
       }
 
       @media (max-width: 480px) {
