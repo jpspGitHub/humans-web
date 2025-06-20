@@ -25,11 +25,11 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
           <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
             <ul>
               <li><Link href="/">Inicio</Link></li>
-              <li><Link href="/about">Quienes Somos</Link></li>
-              <li><Link href="/methodology">Metodología</Link></li>
-              <li><Link href="/trainings">Capacitaciones</Link></li>
-              <li><Link href="/companies">Empresas</Link></li>
-              <li><Link href="/contact">Contacto</Link></li>
+              <li><Link href="/pages/about">Quienes Somos</Link></li>
+              <li><Link href="/pages/methodology">Metodología</Link></li>
+              <li><Link href="/pages/trainings">Capacitaciones</Link></li>
+              <li><Link href="/pages/companies">Empresas</Link></li>
+              <li><Link href="/pages/contact">Contacto</Link></li>
             </ul>
           </nav>
         </div>

@@ -1,6 +1,6 @@
-import Header from '../partial/header';
-import FAQ from '../partial/faq';
-import Footer from '../partial/footer';
+import Header from '../section/header';
+import FAQ from '../section/faq';
+import Footer from '../section/footer';
 
 export default function FAQPage() {
   return (

@@ -1,8 +1,6 @@
-import Image from 'next/image';
 import React from 'react';
 import education from './../../public/images/education.jpg';
-import Button from '../components/button';
-import Section from '../components/section';
+import Section from './../components/section';
 
 const Methodology = () => {
   return (

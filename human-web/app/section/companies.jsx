@@ -1,13 +1,11 @@
-import Image from 'next/image';
 import React from 'react';
 import education from './../../public/images/education.jpg';
-import Button from '../components/button';
-import Section from '../components/section';
+import Section from './../components/section';
 
 const Companies = () => {
   return (
     <Section
-      theme={'primary'}
+      theme={'light'}
       title="Empresas"
       subtitle={<>Convertí tu empresa en un espacio preparado para actuar.</>}
       image={education}

@@ -1,6 +1,6 @@
-import Header from '../partial/header';
-import Testimonials from '../partial/testimonials';
-import Footer from '../partial/footer';
+import Header from '../section/header';
+import Testimonials from '../section/testimonials';
+import Footer from '../section/footer';
 
 export default function TestimonialsPage() {
   return (

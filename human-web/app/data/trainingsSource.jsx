@@ -2,10 +2,10 @@ import education from './../../public/images/education.jpg';
 import firstAid from './../../public/images/first-aid.jpg';
 import waterSafety from './../../public/images/water-safty.jpg';
 
-import PrimerosAuxiliosRCP from '../trainings/pages/primeros_auxilios_RCP';
-import ApoyoEmocionalEmergencias from '../trainings/pages/apoyo_emocional_emergencias';
-import UrgenciasAcuáticas from '../trainings/pages/urgencias_acuáticas';
-import ProgramaBirdie from '../trainings/pages/programa_birdie';
+import PrimerosAuxiliosRCP from '../pages/trainings/pages/primeros_auxilios_RCP';
+import ApoyoEmocionalEmergencias from '../pages/trainings/pages/apoyo_emocional_emergencias';
+import UrgenciasAcuáticas from '../pages/trainings/pages/urgencias_acuáticas';
+import ProgramaBirdie from '../pages/trainings/pages/programa_birdie';
  
 export const trainingsSource = [
     {

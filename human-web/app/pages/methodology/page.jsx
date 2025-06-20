@@ -1,8 +1,8 @@
-import Header from '../partial/header';
-import Footer from '../partial/footer';
-import ContactUs from '../partial/contact-us';
-import education from './../../public/images/education.jpg';
-import Section from '../components/section';
+import Header from './../../section/header';
+import Footer from './../../section/footer';
+import ContactUs from './../../section/contact-us';
+import education from './../../../public/images/education.jpg';
+import Section from './../../components/section';
 
 export default function MethodologyPage() {
   return (

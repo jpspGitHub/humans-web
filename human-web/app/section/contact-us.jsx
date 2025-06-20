@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import Button from '../components/button';
-import { contactSource } from '../data/contactSource';
-import Section from '../components/section';
+import Button from './../components/button';
+import { contactSource } from './../data/contactSource';
+import Section from './../components/section';
 
 
 export default function ContactUs() {
   return (
     <Section
-      theme={'natural'}
+      theme={'primary'}
       title="Contáctanos"
       subtitle="Completa el formulario y estaremos encantados de responderte lo antes posible. ¡Estamos aquí para ayudarte a dar el siguiente paso hacia la seguridad y la confianza!">
       <div className="contact-us">

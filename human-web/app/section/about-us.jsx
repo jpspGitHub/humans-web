@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../components/section';
+import Section from './../components/section';
 
 const AboutUs = () => {
   return (
@@ -10,7 +10,7 @@ const AboutUs = () => {
       actions={[
         {
           label: 'Averigua más!',
-          href: '/about',
+          href: '/pages/about',
           className: 'accent',
         },
       ]}

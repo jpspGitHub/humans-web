@@ -1,41 +1,35 @@
 .footer {
-    padding: 40px 20px;
-    background-color: #00214d; // Dark blue background
-    color: #ffffff; // White text for contrast
+    padding: $spacing-xl $spacing-lg;
+    background-color: $color-primary; 
+    color: $font-color-primary; 
   
     &__container {
       display: flex;
       justify-content: space-between;
       gap: $spacing-md;
-      flex-wrap: wrap; // Ensure responsiveness
-      max-width: 1200px;
-      margin: 0 auto; // Center the content
+      flex-wrap: wrap;
+      max-width: $content-width;
+      margin: 0 auto;
     }
   
     &__column {
-      flex: 1 1 calc(33.333% - 20px); // 3 columns with space between
-      max-width: calc(33.333% - 20px);
+      flex: 1 1 calc(33.333% - $spacing-lg); 
+      max-width: calc(33.333% - $spacing-lg);
   
       @media (max-width: 768px) {
-        flex: 1 1 calc(50% - 20px); // 2 columns on tablets
-        max-width: calc(50% - 20px);
+        flex: 1 1 calc(50% - $spacing-lg);
+        max-width: calc(50% - $spacing-lg);
       }
   
       @media (max-width: 480px) {
-        flex: 1 1 100%; // 1 column on mobile
+        flex: 1 1 100%;
         max-width: 100%;
       }
     }
   
-    // &__logo img {
-    //   width: 100px;
-    //   margin-bottom: 8px;
-    // }
-  
     &__title {
-      // font-size: 1.25rem;
       font-family: $font-family-primary;
-      margin-bottom: 16px;
+      margin-bottom: $spacing-md;
     }
   
     &__list {
@@ -43,12 +37,12 @@
       padding: 0;
   
       & li {
-        margin-bottom: 8px;
+        margin-bottom: $spacing-sm;
       }
     }
   
     &__link {
-      color: #ffffff;
+      color: $font-color-primary;
       text-decoration: none;
       font-family: $font-family-primary;
   
@@ -58,7 +52,6 @@
     }
   
     &__contact {
-      // font-size: 1rem;
       font-family: $font-family-primary;
       margin-bottom: 8px;
     }

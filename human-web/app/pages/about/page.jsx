@@ -1,9 +1,9 @@
-import Header from '../partial/header';
-import Footer from '../partial/footer';
-import image2 from './../../public/images/cover-2.jpg';
-import ContactUs from '../partial/contact-us';
-import Section from '../components/section';
-import education from './../../public/images/education.jpg';
+import Header from './../../section/header';
+import Footer from './../../section/footer';
+import image2 from './../../../public/images/cover-2.jpg';
+import ContactUs from './../../section/contact-us';
+import Section from './../../components/section';
+import education from './../../../public/images/education.jpg';
 
 export default function AboutPage() {
   return (

@@ -1,8 +1,8 @@
 'use client';
-import Header from '../partial/header';
-import ContactUs from '../partial/contact-us';
-import Footer from '../partial/footer';
-import education from './../../public/images/education.jpg';
+import Header from './../../section/header';
+import ContactUs from './../../section/contact-us';
+import Footer from './../../section/footer';
+import education from './../../../public/images/education.jpg';
 
 export default function TrainingsPage() {
   return (

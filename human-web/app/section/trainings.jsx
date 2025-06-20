@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { trainingsSource } from '../data/trainingsSource';
-import Section from '../components/section';
+import Section from './../components/section';
 
 const Trainings = () => {
   return (
@@ -16,22 +16,22 @@ const Trainings = () => {
       actions={[
         {
           label: 'Capacitacion 1',
-          href: '/trainings',
+          href: '/pages/trainings',
           className: 'accent',
         },
         {
           label: 'Capacitacion 1',
-          href: '/trainings',
+          href: '/pages/trainings',
           className: 'accent',
         },
         {
           label: 'Capacitacion 1',
-          href: '/trainings',
+          href: '/pages/trainings',
           className: 'accent',
         },
         {
           label: 'Capacitacion 1',
-          href: '/trainings',
+          href: '/pages/trainings',
           className: 'accent',
         }
       ]}
@@ -54,7 +54,7 @@ const Trainings = () => {
                   <li key={idx}>{item}</li>
                 ))}
               </ul>
-              <Link className="trainings__block-button" href={`/trainings/${training.id}`}><FontAwesomeIcon icon={faCircleChevronRight} /> <span>Averigua más!</span> </Link>
+              <Link className="trainings__block-button" href={`/pages/trainings/${training.id}`}><FontAwesomeIcon icon={faCircleChevronRight} /> <span>Averigua más!</span> </Link>
             </div>
           </div>
         ))}
