@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../components/section';
 import { testimonials, companiesTestimonials } from '../data/testimolialsSource';
 import Image from 'next/image';
+import Button from '../components/button';
 
 
 const Testimonials = () => {
@@ -21,22 +22,26 @@ const Testimonials = () => {
               ))
             }
           </div>
+
+          <h2>Lo que dicen los que ya vivieron la experiencia Human</h2>
+          <div class="testimonials__testimonial-grid">
+            {
+              testimonials.map((testimonial, index) => (
+                <div class="testimonials__testimonial-grid--testimony" key={index}>
+                  <p>"{testimonial.text}"</p>
+                  <h4>{testimonial.name}</h4>
+                  <span>{`${testimonial.position} - ${testimonial.company}`}</span>
+                </div>
+              ))
+            }
+          </div>
         </section>
-      </Section>
-      <Section 
-      theme={'light'} 
-      subtitle={"Lo que dicen los que ya vivieron la experiencia Human"}
-      >
-        <div class="testimonials__testimonial-grid">
-          {
-            testimonials.map((testimonial, index) => (
-              <div class="testimonials__testimonial-grid--testimony" key={index}>
-                <p>"{testimonial.text}"</p>
-                <h4>{testimonial.name}</h4>
-                <span>{`${testimonial.position} - ${testimonial.company}`}</span>
-              </div>
-            ))
-          }
+        <div className='testimonials__actions'>
+          <p>Descubre todas nuestras capacitaciones!</p>
+          <Button className={'accent'} href={`/pages/trainings`}>
+            {/* {training.action} */}
+            Descubrir más!
+          </Button>
         </div>
       </Section>
     </>

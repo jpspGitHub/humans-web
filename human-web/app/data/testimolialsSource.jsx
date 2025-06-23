@@ -21,21 +21,29 @@ export const testimonials = [
 
 
 import logo from './../../public/images/LOGO CENTRO HUMAN (1).jpg';
+import logo2 from './../../public/images/testimonial1.png';
+import logo3 from './../../public/images/testimonial2.png';
+import logo4 from './../../public/images/testimonial3.jpeg';
+import logo5 from './../../public/images/testimonial4.png';
 export const companiesTestimonials = [
     {
         logo: logo,
         name: 'Empresa ABC',
     },
     {
-        logo: logo,
+        logo: logo2,
         name: 'Empresa ABC',
     },
     {
-        logo: logo,
+        logo: logo3,
         name: 'Empresa ABC',
     },
     {
-        logo: logo,
+        logo: logo4,
+        name: 'Empresa ABC',
+    },
+    {
+        logo: logo5,
         name: 'Empresa ABC',
     },
 ]
