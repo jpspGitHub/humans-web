@@ -1,8 +1,8 @@
 import Image from 'next/image.js';
 import Button from './button.jsx';
-export default function Section({ children, actions, title, subtitle, theme, image }) {
+export default function Section({ children, actions, title, subtitle, theme, image, className }) {
     return (
-        <section className={`section ${theme ? ` section--${theme}` : ''}`}>
+        <section className={`section ${theme ? ` section--${theme}` : ''} ${className ? ` ${className}` : ''}`}>
             <div className="section__container">
                 {
                     title &&
@@ -18,7 +18,7 @@ export default function Section({ children, actions, title, subtitle, theme, ima
                 }
 
                 {image && <div className="section__image">
-                    <Image src={image.src} alt={`imagen ${title}`} width={800} height={200} />
+                    <Image src={image.src} alt={`imagen ${title}`} width={800} height={300} />
                 </div>}
                 <div className="section__content">
                     {children}

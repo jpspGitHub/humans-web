@@ -17,13 +17,20 @@ $spacing-lg: $base-spacing * 3;  // 24px
 $spacing-xl: $base-spacing * 4;  // 32px
 
 // Font Sizes
-$font-size-xs: 16px;
-$font-size-sm: 20px;
-$font-size-md: 24px;
-$font-size-lg: 32px;
-$font-size-xl: 48px;
-$font-size-xxl: 52px;
+// $font-size-xs: 16px;
+// $font-size-sm: 20px;
+// $font-size-md: 24px;
+// $font-size-lg: 32px;
+// $font-size-xl: 48px;
+// $font-size-xxl: 52px;
 
+// h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5em; }
+// h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5em; }
+// h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.4em; }
+// h4 { font-size: 1rem; font-weight: 600; font-style: italic; }
+// p { font-size: 1rem; font-weight: 400; color: darken($color-primary, 20%); }
+// ul { font-size: 0.9375rem; margin-left: 1.5em; }
+// ul li { margin-bottom: 0.5em; }
 // Font Colors (Contrasting)
 $font-color-primary: $color-neutral;       // Contrasts with $color-primary
 $font-color-secondary: $color-neutral;    // Contrasts with $color-secondary
@@ -42,7 +49,8 @@ $border-radius-md: 8px;
 $border-radius-lg: 16px;
 
 // Font Family
-$font-family-primary: 'Cooper Hewitt', sans-serif;
+$font-family: 'Open Sans', sans-serif;
+// $font-family-primary: 'Cooper Hewitt', sans-serif;
 $font-family-title: 'Anton', sans-serif;
-$font-family-brand: 'Glaser Stencil', sans-serif; // Confirmar por licencia
+// $font-family-brand: 'Glaser Stencil', sans-serif; // Confirmar por licencia
   

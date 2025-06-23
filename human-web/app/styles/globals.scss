@@ -1,25 +1,25 @@
 @import './variables.scss';
 @import './reset.scss';
 
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('./../fonts/CooperHewitt/CooperHewitt-Book.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('./../fonts/CooperHewitt/CooperHewitt-Medium.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Cooper Hewitt';
+//   src: url('./../fonts/CooperHewitt/CooperHewitt-Book.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Cooper Hewitt';
+//   src: url('./../fonts/CooperHewitt/CooperHewitt-Medium.woff') format('woff');
+//   font-weight: 700;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'Anton';
-  src: url('./../fonts/Anton/Anton-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Anton';
+//   src: url('./../fonts/Anton/Anton-Regular.ttf') format('ttf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 html,
 body {
@@ -28,19 +28,29 @@ body {
 }
 
 body {
-  color: $font-color-white;
-  background: $color-neutral;
-  font-family: $font-family-primary;
+  line-height: 1.5;
+  color: $color-primary;
+  font-family: $font-family;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+// body {
+//   font-family: 'Open Sans', sans-serif;
+//   font-size: 1rem;
+//   line-height: 1.5;
+//   color: $color-primary;
+// }
 
 @import './mixins/mixins.scss';
 @import './components/button.scss';
 @import './components/section.scss';
+@import './components/wizard.scss';
 @import './partial/header.scss';
-@import './partial/main-cover.scss';
+@import './partial/hero.scss';
+@import './partial/about-us.scss';
+@import './partial/testimonials.scss';
 @import './partial/contact-us.scss';
 @import './partial/footer.scss';
 @import './partial/trainings.scss';

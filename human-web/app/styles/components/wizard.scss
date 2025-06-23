@@ -1,0 +1,70 @@
+.wizard {
+    &__container {
+        background-color: $color-neutral;
+        color: $font-color-neutral;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &__steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: $spacing-md;
+        margin-bottom: $spacing-lg;
+    }
+
+    &__step {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        // background-color: $color-neutral;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // color: $font-color-neutral;
+        // font-size: $font-size-sm;
+
+        &--active {
+            background-color: $color-secondary-accent;
+            color: $font-color-neutral;
+        }
+    }
+
+    &__actions {
+        padding: $spacing-md $spacing-lg;
+        border: none;
+        width: 100%;
+
+        .button{
+            margin: 0;
+        }
+        // border-radius: $border-radius-sm;
+        // background-color: $color-secondary-accent;
+        // color: $font-color-neutral;
+        // cursor: pointer;
+        // font-size: $font-size-md;
+
+        // &:hover {
+        //     background-color: darken($color-secondary-accent, 10%);
+        // }
+    }
+
+    &__motion-box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color: $color-light-neutral;
+        border-radius: $border-radius-md;
+        // box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
+    }
+
+}

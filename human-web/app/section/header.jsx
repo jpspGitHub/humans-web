@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from './../../public/images/LOGO CENTRO HUMAN (3).svg'
+import Button from './../components/button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+
 const Header = ({ title, subtitle, image, fullScreen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -11,10 +15,10 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
 
   return (
     <div
-      className="main-cover"
-      style={{ backgroundImage: `url(${image?.src})`, minHeight: fullScreen ? '100vh' : '50vh' }}
+      className="hero"
+      style={{ backgroundImage: `url(${image?.src})`, minHeight: fullScreen ? '110vh' : '50vh' }}
     >
-      <div className="main-cover__overlay"></div>
+      <div className="hero__overlay"></div>
       <header className="header">
         <div className='header__content'>
           <button className="header__hamburger" onClick={toggleMenu} aria-label="Toggle menu">
@@ -34,16 +38,19 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
           </nav>
         </div>
       </header>
-      <div className='main-cover__content'>
+      <div className='hero__content'>
         <Image
           src={logo.src}
           alt={'Centro Human Logo'}
-          className="main-cover__content__image"
+          className="hero__content__image"
           width={fullScreen ? 500 : 200}
           height={fullScreen ? 300 : 100}
         />
-        <h1 className="main-cover__content__title">{title}</h1>
-        <p className="main-cover__content__subtitle">{subtitle}</p>
+        <h1 className="hero__content__title">{title}</h1>
+        <p className="hero__content__subtitle">{subtitle}</p>
+        <div className="hero__content__cta">
+          <Button className="accent" href="/pages/contact">Conctactanos! <FontAwesomeIcon icon={faPaperPlane} /></Button>
+        </div>
       </div>
 
     </div>

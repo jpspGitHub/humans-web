@@ -1,11 +1,13 @@
 .button {
-  padding: $font-size-sm $font-size-md;
+  padding: $spacing-sm $spacing-md;
   border-radius: $border-radius-sm;
   width: fit-content;
   border: none;
   cursor: pointer;
   transition: opacity .4s ease;
-  margin-bottom: $font-size-sm;
+  margin-bottom: $spacing-sm;
+  display: block;
+  text-align: center;
   
   &.accent {
     color: $font-color-primary-accent;

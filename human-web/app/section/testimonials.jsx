@@ -1,35 +1,46 @@
 import React from 'react';
+import Section from '../components/section';
+import { testimonials, companiesTestimonials } from '../data/testimolialsSource';
+import Image from 'next/image';
 
-const testimonials = [
-  {
-    name: 'Ana P.',
-    text: 'El curso superó mis expectativas y ahora me siento preparada para actuar en emergencias.',
-  },
-  {
-    name: 'Empresa XYZ',
-    text: 'La capacitación fue muy completa y adaptada a nuestras necesidades.',
-  },
-  {
-    name: 'Carlos G.',
-    text: 'Excelente metodología y profesionales comprometidos.',
-  },
-];
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
-      <div className="testimonials__container">
-        <h2 className="testimonials__title">Testimonios</h2>
-        <div className="testimonials__items">
-          {testimonials.map((t, index) => (
-            <div className="testimonials__item" key={index}>
-              <p className="testimonials__text">{t.text}</p>
-              <p className="testimonials__name">- {t.name}</p>
-            </div>
-          ))}
+    <>
+      <Section theme={'natural'}
+        title="Testimonios"
+        subtitle="Los Alumnos y Empresas con las que trabajamos nos respaldan">
+        <section class="testimonials">
+          <h2></h2>
+          <div class="testimonials--logo-grid">
+            {
+              companiesTestimonials.map((testimonial, index) => (
+                <>
+                  <Image key={index} src={testimonial.logo} alt={testimonial.name} width={200} height={200} />
+                </>
+              ))
+            }
+          </div>
+        </section>
+      </Section>
+      <Section 
+      theme={'light'} 
+      subtitle={"Lo que dicen los que ya vivieron la experiencia Human"}
+      >
+        <div class="testimonials__testimonial-grid">
+          {
+            testimonials.map((testimonial, index) => (
+              <div class="testimonials__testimonial-grid--testimony" key={index}>
+                <p>"{testimonial.text}"</p>
+                <h4>{testimonial.name}</h4>
+                <span>{`${testimonial.position} - ${testimonial.company}`}</span>
+              </div>
+            ))
+          }
         </div>
-      </div>
-    </section>
+      </Section>
+    </>
+
   );
 };
 

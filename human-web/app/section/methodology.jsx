@@ -5,7 +5,7 @@ import Section from './../components/section';
 const Methodology = () => {
   return (
     <Section
-      theme="accent"
+      theme="light"
       title="Metodología"
       subtitle={'Nuestros programas combinan teoría, práctica y entrenamiento continuo.'}
       image={education}

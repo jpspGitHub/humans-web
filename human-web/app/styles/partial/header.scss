@@ -25,18 +25,25 @@
 
 
   &__nav {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: $spacing-sm;
+
     ul {
       display: flex;
       list-style: none;
       gap: $spacing-md;
+      margin-right: 1.5em;
     }
 
     li {
       padding: $spacing-md;
       border-radius: $spacing-sm;
+      margin-bottom: 0;
 
       &:hover {
         color: $color-light-neutral;
+        background-color: rgba(0, 0, 0, .5);
+
         cursor: pointer;
       }
     }

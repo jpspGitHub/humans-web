@@ -1,13 +1,12 @@
 .contact-us {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: $spacing-md;
-    width: 66%;
     padding: $spacing-lg;
     background-color: $color-light-neutral;
     border-radius: $border-radius-md;
@@ -16,14 +15,11 @@
 
   &__social{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     gap: $spacing-md;
-    width: 33%;
     padding: $spacing-lg;
-    background-color: $color-light-neutral;
-    border-radius: $border-radius-md;
-    color: $font-color-neutral;
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
+    // box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
     
     &__icon {
       height: 50px;
@@ -39,6 +35,7 @@
   &__social-item{
     display: flex;
     align-items: center;
+    flex-direction: row;
     margin-bottom: $spacing-md;
   }
 

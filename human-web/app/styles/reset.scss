@@ -141,49 +141,65 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: $font-size-xxl;
-  font-weight: 700;
+h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5em; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5em; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.4em; }
+h4 { font-size: 1rem; font-weight: 600; font-style: italic; }
+p { font-size: 1rem; font-weight: 400; color: darken($color-primary, 20%); }
+ul { font-size: 0.9375rem; margin-left: 1.5em; }
+ul li { margin-bottom: 0.5em; }
 
-  @media (max-width: 768px) {
-    font-size: $font-size-xl;
-  }
-
-  @media (max-width: 480px) {
-    font-size: $font-size-lg;
+@media (min-width: 1024px) {
+  :root { font-size: 112.5%; /* ≈18px */ }
+}
+@media (max-width: 768px) {
+  :root {
+    font-size: 87.5%; /* ≈14px, texto más cómodo en móvil */
   }
 }
+// h1 {
+//   font-size: $font-size-xxl;
+//   font-weight: 700;
 
-h2 {
-  font-size: $font-size-xl;
+//   @media (max-width: 768px) {
+//     font-size: $font-size-xl;
+//   }
 
-  @media (max-width: 768px) {
-    font-size: $font-size-lg;
-  }
+//   @media (max-width: 480px) {
+//     font-size: $font-size-lg;
+//   }
+// }
 
-  @media (max-width: 480px) {
-    font-size: $font-size-md;
-  }
-}
+// h2 {
+//   font-size: $font-size-xl;
 
-h3 {
-  font-size: $font-size-lg;
+//   @media (max-width: 768px) {
+//     font-size: $font-size-lg;
+//   }
 
-  @media (max-width: 768px) {
-    font-size: $font-size-lg;
-  }
+//   @media (max-width: 480px) {
+//     font-size: $font-size-md;
+//   }
+// }
 
-  @media (max-width: 480px) {
-    font-size: $font-size-md;
-  }
-}
+// h3 {
+//   font-size: $font-size-lg;
 
-h4 {
-  font-size: $font-size-md;
-}
+//   @media (max-width: 768px) {
+//     font-size: $font-size-lg;
+//   }
 
-p,
-ul,
-a {
-  font-size: $font-size-sm;
-}
+//   @media (max-width: 480px) {
+//     font-size: $font-size-md;
+//   }
+// }
+
+// h4 {
+//   font-size: $font-size-md;
+// }
+
+// p,
+// ul,
+// a {
+//   font-size: $font-size-sm;
+// }

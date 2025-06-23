@@ -1,4 +1,4 @@
-import MainCover from "./section/main-cover";
+import MainCover from "./section/hero";
 import AboutUs from "./section/about-us";
 import ContactUs from "./section/contact-us";
 import Footer from "./section/footer";
@@ -7,6 +7,7 @@ import Trainings from "./section/trainings";
 import Companies from "./section/companies";
 import Header from "./section/header";
 import image2 from './../public/images/cover-2.jpg';
+import Testimonials from "./section/testimonials";
 
 export default function Home() {
   const background = {
@@ -14,18 +15,24 @@ export default function Home() {
     subtitle: 'Capacitaciones en primeros auxilios, soporte vital básico, rescate acuático y entrenamiento en natación técnica.',
     backgroundImage: image2
   };
+  const background2 = {
+    title: 'Formación que salva vidas',
+    subtitle: 'Aprendé técnicas efectivas en situaciones reales, soporte vital y rescate acuático.',
+    backgroundImage: image2
+  };
   return (
     <div>
       <Header
-        title={background.title}
-        subtitle={background.subtitle}
-        image={background.backgroundImage}
+        title={background2.title}
+        subtitle={background2.subtitle}
+        image={background2.backgroundImage}
         fullScreen={true}
       />
       <AboutUs />
       <Trainings />
-      <Methodology />
+      {/* <Methodology /> */}
       <Companies />
+      <Testimonials />
       <ContactUs />
       <Footer />
     </div>

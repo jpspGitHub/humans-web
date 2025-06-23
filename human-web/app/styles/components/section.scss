@@ -3,22 +3,22 @@
     padding-bottom: 6em;
 
     &--primary {
-        background-color: $color-primary;
+        background: $color-primary url("./../../../public/images/overlay.png");
         color: $font-color-primary;
     }
 
     &--accent {
-        background-color: $color-primary-accent;
+        background: $color-primary-accent url("./../../../public/images/overlay.png");
         color: $font-color-primary-accent;
     }
 
     &--natural {
-        background-color: $color-neutral;
+        background: $color-neutral url("./../../../public/images/overlay.png");
         color: $font-color-neutral;
     }
 
     &--light {
-        background-color: $color-light-neutral;
+        background: $color-light-neutral url("./../../../public/images/overlay.png");
         color: $font-color-light-neutral;
     }
 
@@ -45,19 +45,19 @@
     &__title {
         margin: 0 auto;
         margin-top: 1em;
-        padding: $spacing-md;
+        padding: $spacing-md $spacing-xl;
         text-transform: uppercase;
         position: absolute;
         margin-bottom: $spacing-sm;
         padding-bottom: $spacing-sm;
-        top: -3.9em;
+        top: -4.7em;
 
         @media (max-width: 768px) {
-            top: -2.6em;
+            top: -4.6em;
         }
 
         @media (max-width: 480px) {
-            top: -2.6em;
+            top: -4.6em;
         }
 
         &--primary {
@@ -106,7 +106,7 @@
     }
 
     &__subtitle {
-        margin: $spacing-md 0;
+        margin-top: $spacing-lg;
         text-align: center;
     }
 
@@ -132,7 +132,9 @@
             width: 100%;
             margin-top: $spacing-xl;
             object-fit: cover;
-            border-radius: $border-radius-md;
+            //border-radius: $border-radius-md;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
+
         }
     }
 

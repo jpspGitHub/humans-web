@@ -28,7 +28,7 @@
     }
   
     &__title {
-      font-family: $font-family-primary;
+      // font-family: $font-family-primary;
       margin-bottom: $spacing-md;
     }
   
@@ -44,7 +44,7 @@
     &__link {
       color: $font-color-primary;
       text-decoration: none;
-      font-family: $font-family-primary;
+      // font-family: $font-family-primary;
   
       &:hover {
         text-decoration: underline;
@@ -52,7 +52,7 @@
     }
   
     &__contact {
-      font-family: $font-family-primary;
+      // font-family: $font-family-primary;
       margin-bottom: 8px;
     }
   }

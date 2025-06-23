@@ -17,7 +17,7 @@ const Companies = () => {
         },
       ]}
     >
-      <p >Diseñamos capacitaciones a medida para crear entornos más seguros.</p>
+      <p>Diseñamos capacitaciones a medida para crear entornos más seguros.</p>
       <br></br>
       <br></br>
       <ul className="companies__list">
