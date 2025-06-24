@@ -1,8 +1,8 @@
 import Image from 'next/image.js';
 import Button from './button.jsx';
-export default function Section({ children, actions, title, subtitle, theme, image, className }) {
+export default function Section({ children, actions, title, subtitle, theme, image, className, removeBottomSeparation }) {
     return (
-        <section className={`section ${theme ? ` section--${theme}` : ''} ${className ? ` ${className}` : ''}`}>
+        <section className={`section ${theme ? ` section--${theme}` : ''} ${className ? ` ${className}` : ''} ${removeBottomSeparation ? 'remove-bottom-separation' : ''}  `}>
             <div className="section__container">
                 {
                     title &&

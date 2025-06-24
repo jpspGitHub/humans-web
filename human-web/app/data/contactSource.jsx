@@ -9,12 +9,12 @@ export const contactSource = [
       { text: '(+598) 99 907 624', value: 'http://wa.me/59899907624' },
     ],
   },
-  {
-    icon: <FontAwesomeIcon className='contact-us__social__icon' icon={faPhone} />,
-    data: [
-      { text: '(+598) 99 907 624', value: 'tel:+59899907624' },
-    ],
-  },
+  // {
+  //   icon: <FontAwesomeIcon className='contact-us__social__icon' icon={faPhone} />,
+  //   data: [
+  //     { text: '(+598) 99 907 624', value: 'tel:+59899907624' },
+  //   ],
+  // },
   {
     icon: <FontAwesomeIcon className='contact-us__social__icon' icon={faInstagram} />,
     data: [

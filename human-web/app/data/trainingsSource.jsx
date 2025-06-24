@@ -36,34 +36,3 @@ export const trainingsSource = [
       action: 'Descubrí el Programa Birdie'
     }
 ]
-
-// export const trainingsSource = [
-//     {
-//         id: 1,
-//         title: 'Primeros Auxilios y RCP',
-//         items: ['Público general', 'Empresas', 'Liceos / instituciones', 'Entrenamientos recurrentes'],
-//         image: education,
-//         page: <PrimerosAuxiliosRCP />
-//       },
-//       {
-//         id: 2,
-//         title: 'Apoyo Emocional en Emergencias',
-//         items: ['Versión adultos', 'Versión pediátrica'],
-//         image: firstAid,
-//         page: <ApoyoEmocionalEmergencias />
-//       },
-//       {
-//         id: 3,
-//         title: 'Urgencias Acuáticas',
-//         items: ['Curso de Primera Respuesta Acuática', 'Entrenamientos personalizados', 'Menciones a ESBRA Argentina'],
-//         image: waterSafety,
-//         page: <UrgenciasAcuáticas />
-//       },
-//       {
-//         id: 4,
-//         title: 'Programa Birdie (Natación)',
-//         items: ['Entrenamientos personalizados', 'Preparación para pruebas y competencias'],
-//         image: education,
-//         page: <ProgramaBirdie />
-//       },
-// ]

@@ -16,9 +16,8 @@ const Testimonials = () => {
           <div class="testimonials--logo-grid">
             {
               companiesTestimonials.map((testimonial, index) => (
-                <>
-                  <Image key={index} src={testimonial.logo} alt={testimonial.name} width={200} height={200} />
-                </>
+                <Image key={index} src={testimonial.logo} alt={testimonial.name} width={200} height={200} />
+
               ))
             }
           </div>

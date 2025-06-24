@@ -2,21 +2,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from './button';
-
-// const steps = [
-//   {
-//     title: 'Paso 1',
-//     content: 'Información del usuario',
-//   },
-//   {
-//     title: 'Paso 2',
-//     content: 'Dirección de envío',
-//   },
-//   {
-//     title: 'Paso 3',
-//     content: 'Resumen y confirmación',
-//   },
-// ];
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faForward, faPaperPlane, faBackward } from '@fortawesome/free-solid-svg-icons';
 
 const Wizard = ({ steps }) => {
     const [step, setStep] = useState(0);
@@ -40,7 +27,7 @@ const Wizard = ({ steps }) => {
                         key={idx}
                         className={`wizard__step ${step === idx ? '--active' : ''}`}
                     >
-                        {idx + 1}
+                        {/* {idx + 1} */}
                     </div>
                 ))}
             </div>
@@ -56,22 +43,30 @@ const Wizard = ({ steps }) => {
                         variants={variants}
                         transition={{ duration: 0.4 }}
                         className='wizard__motion-box'
-                        
+
                     >
-                        <h2>{steps[step].title}</h2>
+                        <h2 className='wizard__content--title'>{steps[step].title}</h2>
                         <div>
-                        {steps[step].content} 
+                            {steps[step].content}
                         </div>
                     </motion.div>
                 </AnimatePresence>
             </div>
 
             <div className='wizard__actions'>
-                {step > 0 && <Button className={'natural'} onClick={prev}>Anterior</Button>}
+                {step > 0 && <Button className={'natural'} onClick={prev}>
+                    <FontAwesomeIcon icon={faBackward} />
+                    Anterior
+                </Button>}
                 {step < steps.length - 1 ? (
-                    <Button className={'primary'} onClick={next}>Siguiente</Button>
+                    <Button className={'accent'} onClick={next}>Siguiente
+                        <FontAwesomeIcon icon={faForward} />
+                    </Button>
                 ) : (
-                    <Button className={'primary'} onClick={() => alert('¡Proceso finalizado!')}>Finalizar</Button>
+                    <Button className={'primary'} onClick={() => alert('¡Proceso finalizado!')}>
+                        Enviar
+                        <FontAwesomeIcon icon={faPaperPlane} />
+                    </Button>
                 )}
             </div>
         </div>
