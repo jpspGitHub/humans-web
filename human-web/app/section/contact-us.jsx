@@ -92,10 +92,8 @@ export default function ContactUs() {
         </div>
         <div className="contact-us__info__social">
           {contactSource.map((item, index) => (
-            <div key={`contact_${index}`}>
-              <div className="contact-us__info__social--item">
-                {item.icon}
-              </div>
+            <div key={`contact_${index}`} className="contact-us__info__social--item">
+              {item.icon}
             </div>
           ))}
         </div>

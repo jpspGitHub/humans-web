@@ -1,9 +1,11 @@
 .footer {
-  padding: $spacing-xl $spacing-lg;
+  // padding: $spacing-xl $spacing-lg;
+  @include space-2(padding, xl, lg);
+
   background-color: rgba($color-primary, 0.7);
   color: $font-color-primary;
 
-  .copyright{
+  .copyright {
     text-align: center;
     color: $font-color-primary;
     font-size: 0.7rem;
@@ -14,19 +16,21 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    gap: $spacing-md;
+    // gap: $spacing-md;
+    @include space(gap, md);
+
     flex-wrap: wrap;
     max-width: $content-width;
     margin: 0 auto;
   }
 
   &__column {
-    flex: 1 1 calc(33.333% - $spacing-lg);
-    max-width: calc(33.333% - $spacing-lg);
+    flex: 1 1 calc(33.333% - map-get($spaces, lg) * $unit);
+    max-width: calc(33.333% - map-get($spaces, lg) * $unit);
 
     @media (max-width: 768px) {
-      flex: 1 1 calc(50% - $spacing-lg);
-      max-width: calc(50% - $spacing-lg);
+      flex: 1 1 calc(50% - map-get($spaces, lg) * $unit);
+      max-width: calc(50% - map-get($spaces, lg) * $unit);
     }
 
     @media (max-width: 480px) {
@@ -36,7 +40,8 @@
   }
 
   &__title {
-    margin-bottom: $spacing-md;
+    // margin-bottom: $spacing-md;
+    @include space(margin-bottom, md);
   }
 
   &__link {
@@ -51,7 +56,9 @@
     &__container {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      // gap: 1rem;
+      @include space(gap, md);
+
     }
 
   }
@@ -62,7 +69,9 @@
 
     &__social {
       display: flex;
-      gap: 1rem;
+      // gap: 1rem;
+      @include space(gap, md);
+
       font-size: 2rem;
     }
   }

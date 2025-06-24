@@ -9,33 +9,30 @@ $color-light-neutral: #ffffff;
 // Spacing
 $base-spacing: 8px;
 
-// Derived Spacing
-$spacing-xs: $base-spacing * 0.5; // 4px
-$spacing-sm: $base-spacing;      // 8px
-$spacing-md: $base-spacing * 2;  // 16px
-$spacing-lg: $base-spacing * 3;  // 24px
-$spacing-xl: $base-spacing * 4;  // 32px
+$unit: 4px;
+$spaces: (
+  0: 0,  // 4px
+  xs: 1,  // 4px
+  sm: 2,  // 8px
+  md: 4,  // 16px
+  lg: 6,  // 24px
+  xl: 8,  // 32px
+  xxl: 12 // 48px
+);
 
+$line-height: 1.5;
 // Font Sizes
-// $font-size-xs: 16px;
-// $font-size-sm: 20px;
-// $font-size-md: 24px;
-// $font-size-lg: 32px;
-// $font-size-xl: 48px;
-// $font-size-xxl: 52px;
+$font-size-sm: .7rem;
+$font-size-normal: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
 
-// h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5em; }
-// h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5em; }
-// h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.4em; }
-// h4 { font-size: 1rem; font-weight: 600; font-style: italic; }
-// p { font-size: 1rem; font-weight: 400; color: darken($color-primary, 20%); }
-// ul { font-size: 0.9375rem; margin-left: 1.5em; }
-// ul li { margin-bottom: 0.5em; }
-// Font Colors (Contrasting)
-$font-color-primary: $color-neutral;       // Contrasts with $color-primary
-$font-color-secondary: $color-neutral;    // Contrasts with $color-secondary
-$font-color-white: $color-primary;      // Contrasts with $color-neutral
-$font-color-gray: $color-primary;       // Contrasts with $color-gray
+
+$font-color-primary: $color-neutral;
+$font-color-secondary: $color-neutral;
+$font-color-white: $color-primary;
+$font-color-gray: $color-primary;
 
 $font-color-primary: $color-light-neutral;
 $font-color-primary-accent: $color-light-neutral;
@@ -49,8 +46,8 @@ $border-radius-md: 8px;
 $border-radius-lg: 16px;
 
 // Font Family
-$font-family: 'Open Sans', sans-serif;
+$font-family: 'Inter', sans-serif;
 // $font-family-primary: 'Cooper Hewitt', sans-serif;
-$font-family-title: 'Anton', sans-serif;
+$font-family-title: 'Poppins', sans-serif;
 // $font-family-brand: 'Glaser Stencil', sans-serif; // Confirmar por licencia
   

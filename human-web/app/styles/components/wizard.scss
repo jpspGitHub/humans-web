@@ -10,10 +10,13 @@
         width: 100%;
         height: 100%;
         min-height: 300px;
-        padding: $spacing-lg;
+        // padding: $spacing-lg;
+
+        @include space(padding, md);
+        //padding: 32px;
+
         background: white;
-        border-radius: 12px;
-        padding: 32px;
+        border-radius: $border-radius-md;
         //max-width: 600px;
         margin: 0 auto;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -23,9 +26,13 @@
         display: flex;
         flex-direction: row;
         justify-content: end;
-        gap: $spacing-md;
+        // gap: $spacing-md;
+        @include space(gap, md);
+
         width: 100%;
-        margin-bottom: $spacing-lg;
+        // margin-bottom: $spacing-lg;
+        @include space(margin-bottom, lg);
+
     }
 
     &__step {
@@ -49,7 +56,8 @@
         justify-content: end;
         border-top: 1px solid $color-light-neutral;
         width: 100%;
-        gap: 1rem;
+        // gap: 1rem;
+        @include space(gap, md);
 
         .button {
             margin: 0;
@@ -66,8 +74,11 @@
         &--title {
             text-align: left;
             border-bottom: 1px solid $color-primary-accent;
-            padding-bottom: $spacing-md;
-            margin-bottom: 1rem;
+
+            @include space(padding-bottom, md);
+            @include space(margin-bottom, md);
+            // padding-bottom: $spacing-md;
+            // margin-bottom: 1rem;
             // font-weight: 100;
         }
     }

@@ -5,10 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: $spacing-lg 0;
-
-
-
+  // padding: $spacing-lg 0;
+  @include space-2(padding, lg, xs);
 
   &__content {
     border: 1px solid $color-neutral;
@@ -26,18 +24,21 @@
 
   &__nav {
     background-color: rgba(0, 0, 0, .2);
-    border-radius: $spacing-sm;
+    border-radius: $border-radius-md;
 
     ul {
       display: flex;
       list-style: none;
-      gap: $spacing-md;
+      // gap: $spacing-md;
+      @include space(gap, md);
+
       margin-right: 1.5em;
     }
 
     li {
-      padding: $spacing-md;
-      border-radius: $spacing-sm;
+      // padding: $spacing-md;
+      @include space(padding, md);
+      border-radius: $border-radius-md;
       margin-bottom: 0;
 
       &:hover {
@@ -66,7 +67,7 @@
 
       ul {
         flex-direction: column;
-        gap: $spacing-sm;
+        @include space(gap, md);
       }
     }
   }

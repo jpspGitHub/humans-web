@@ -12,14 +12,15 @@ const Testimonials = () => {
         title="Testimonios"
         subtitle="Los Alumnos y Empresas con las que trabajamos nos respaldan">
         <section class="testimonials">
-          <h2></h2>
-          <div class="testimonials--logo-grid">
-            {
-              companiesTestimonials.map((testimonial, index) => (
-                <Image key={index} src={testimonial.logo} alt={testimonial.name} width={200} height={200} />
+          <div className="testimonials--logo-grid-wrapper">
+            <div className="testimonials--logo-grid">
+              {
+                companiesTestimonials.map((testimonial, index) => (
+                  <Image key={index} src={testimonial.logo} alt={testimonial.name} width={200} height={200} />
 
-              ))
-            }
+                ))
+              }
+            </div>
           </div>
 
           <h2>Lo que dicen los que ya vivieron la experiencia Human</h2>

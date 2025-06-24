@@ -19,7 +19,9 @@
     margin-bottom: 1.5em;
     width: calc(33% - 1em);
     border-radius: $border-radius-md;
-    padding: $spacing-lg;
+    // padding: $spacing-lg;
+    @include space(padding, lg);
+
     color: $font-color-light-neutral;
     position: relative;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
@@ -36,7 +38,9 @@
     }
 
     &-title {
-      padding-bottom: $spacing-md;
+      // padding-bottom: $spacing-md;
+      @include space(padding-bottom, md);
+
       border-bottom: solid 2px $font-color-light-neutral;
       letter-spacing: 0.1em;
       margin: 0 0 1em 0;
@@ -63,7 +67,7 @@
 
     &-text {
       text-align: center;
-      margin: 2rem 0;
+      margin-bottom: 2rem;
     }
 
   }

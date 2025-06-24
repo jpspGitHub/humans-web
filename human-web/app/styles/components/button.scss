@@ -1,16 +1,21 @@
 .button {
-  padding: $spacing-sm $spacing-md;
+  @include space-2(padding, sm, md);
+  @include space-4(margin, md, md, md, sm);
+  //margin-bottom: $spacing-sm;
+  
+  // padding: $spacing-sm $spacing-md;
   border-radius: $border-radius-sm;
   width: fit-content;
   border: none;
   cursor: pointer;
   transition: opacity .4s ease;
-  margin-bottom: $spacing-sm;
   display: block;
   text-align: center;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  // gap: 1rem;
+  @include space(gap, md);
+
 
   &.accent {
     color: $font-color-primary-accent;

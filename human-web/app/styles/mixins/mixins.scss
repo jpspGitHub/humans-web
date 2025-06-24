@@ -1,18 +1,67 @@
+
+@mixin space($prop, $key) {
+  $value: map-get($spaces, $key) * $unit;
+
+  #{$prop}: $value;
+
+  @media (max-width: 768px) {
+    #{$prop}: $value * 0.75;
+  }
+
+  @media (max-width: 480px) {
+    #{$prop}: $value * 0.5;
+  }
+}
+
+@mixin space-2($prop, $tb, $lr) {
+  $tb-val: if($tb == auto, auto, map-get($spaces, $tb) * $unit);
+  $lr-val: if($lr == auto, auto, map-get($spaces, $lr) * $unit);
+
+  #{$prop}: #{$tb-val} #{$lr-val};
+
+  @media (max-width: 768px) {
+    $tb-resp: if($tb == auto, auto, $tb-val * 0.75);
+    $lr-resp: if($lr == auto, auto, $lr-val * 0.75);
+    #{$prop}: #{$tb-resp} #{$lr-resp};
+  }
+
+  @media (max-width: 480px) {
+    $tb-resp: if($tb == auto, auto, $tb-val * 0.5);
+    $lr-resp: if($lr == auto, auto, $lr-val * 0.5);
+    #{$prop}: #{$tb-resp} #{$lr-resp};
+  }
+}
+
+@mixin space-4($prop, $t, $r, $b, $l) {
+  $t-val: map-get($spaces, $t) * $unit;
+  $r-val: map-get($spaces, $r) * $unit;
+  $b-val: map-get($spaces, $b) * $unit;
+  $l-val: map-get($spaces, $l) * $unit;
+
+  #{$prop}: #{$t-val} #{$r-val} #{$b-val} #{$l-val};
+
+  @media (max-width: 768px) {
+    #{$prop}: #{$t-val * 0.75} #{$r-val * 0.75} #{$b-val * 0.75} #{$l-val * 0.75};
+  }
+
+  @media (max-width: 480px) {
+    #{$prop}: #{$t-val * 0.5} #{$r-val * 0.5} #{$b-val * 0.5} #{$l-val * 0.5};
+  }
+}
+
 @mixin headers($positionY, $backgroundColor, $textColor) {
   background-color: $backgroundColor;
   margin: 0 auto;
   color: $textColor;
   margin-top: $positionY;
-  padding: $spacing-md;
   text-transform: uppercase;
   font-weight: 300;
   position: absolute;
-  margin-bottom: $spacing-sm;
-  padding-bottom: $spacing-sm;
-
-  @media (max-width: 768px) {
-    // font-size: $font-size-xl;
-  }
+  // margin-bottom: $spacing-sm;
+  // padding-bottom: $spacing-sm;
+  // padding: $spacing-md;
+  @include space(margin-bottom, sm);
+  @include space-4(padding, md, md, sm, md);
 
   &::before {
     content: '';
@@ -46,15 +95,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: $spacing-xl auto;
+  // margin: $spacing-xl auto;
+  @include space-2(margin, xl, auto);
 
   @media (max-width: 768px) {
     flex-direction: column; // Stack content on smaller screens
   }
 }
 
-@mixin base-section($background-color){
-  padding: $spacing-xl $spacing-lg;
+@mixin base-section($background-color) {
+  // padding: $spacing-xl $spacing-lg;
+  @include space-2(padding, xl, lg);
+
   background-color: $background-color;
   width: 100%;
   display: flex;

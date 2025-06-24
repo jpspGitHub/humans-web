@@ -3,11 +3,18 @@
   &--logo-grid {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 30px;
+    justify-content: space-between;
+    @include space(gap, md);
+
     align-items: center;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid $color-light-neutral;
+
+    &-wrapper {
+      overflow-x: auto;
+      border-bottom: 2px solid $color-light-neutral;
+      max-width: 106vw;
+    }
 
     img {
       filter: grayscale(100%);
@@ -28,7 +35,9 @@
 
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    // gap: 30px;
+    @include space(gap, md);
+
 
     &--testimony {
       width: 33%;
