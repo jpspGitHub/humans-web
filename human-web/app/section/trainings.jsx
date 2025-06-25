@@ -26,15 +26,14 @@ const Trainings = () => {
               </div>
               <h4 >{training.title}</h4>
             </div>
-            <div className="trainings__block-text">
-              <p>{training.text}</p>
+            <div className="trainings__block-content">
+              <div className="trainings__block-content--text">
+                <p>{training.text}</p>
+              </div>
+              <Button className={'accent'} href={`/pages/trainings/${training.id}`}>
+                Ver más!
+              </Button>
             </div>
-            {/* <div> */}
-            <Button className={'accent'} href={`/pages/trainings/${training.id}`}>
-              {/* {training.action} */}
-              Ver más!
-            </Button>
-            {/* </div> */}
           </div>
         ))}
       </div>

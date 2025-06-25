@@ -16,8 +16,9 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    // gap: $spacing-md;
-    @include space(gap, md);
+    @include space-2(padding, xxl, 0);
+    // padding: 48px 0;
+    @include space(gap, lg);
 
     flex-wrap: wrap;
     max-width: $content-width;
@@ -57,7 +58,7 @@
       display: flex;
       flex-wrap: wrap;
       // gap: 1rem;
-      @include space(gap, md);
+      @include space(gap, lg);
 
     }
 
@@ -70,7 +71,7 @@
     &__social {
       display: flex;
       // gap: 1rem;
-      @include space(gap, md);
+      @include space(gap, lg);
 
       font-size: 2rem;
     }

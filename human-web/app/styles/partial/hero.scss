@@ -43,12 +43,10 @@
     }
 
     &__title {
-      // font-size: $font-size-xxl;
       font-family: $font-family-title;
       color: $font-color-primary;
       border-bottom: 1px $font-color-primary solid;
-      // margin-bottom: $spacing-md;
-      // padding-bottom: $spacing-md;
+      
       @include space(margin-bottom, md);
       @include space(padding-bottom, md);
 
@@ -84,14 +82,17 @@
 
     &__cta {
       margin: 5rem 0;
-      z-index: 1;
-      font-size: 1.6rem;
+      @include space-4(margin, md, 0, xxl, 0);
 
+      z-index: 1;
+      font-size: $font-size-lg;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
       a {
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .12);
-        font-weight: 100;
-        border-radius: 3rem;
-        padding: 1rem 2rem;
+        font-weight: 600;
+        // border-radius: 3rem;
+        @include space-2(padding, lg, xl);
+        // padding: 1rem 2rem;
       }
     }
 

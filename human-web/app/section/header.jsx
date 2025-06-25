@@ -16,7 +16,7 @@ const Header = ({ title, subtitle, image, fullScreen }) => {
   return (
     <div
       className="hero"
-      style={{ backgroundImage: `url(${image?.src})`, minHeight: fullScreen ? '110vh' : '50vh' }}
+      style={{ backgroundImage: `url(${image?.src})`, minHeight: fullScreen ? '100vh' : '50vh' }}
     >
       <div className="hero__overlay"></div>
       <header className="header">

@@ -13,7 +13,7 @@ export default function Section({ children, actions, title, subtitle, theme, ima
                 {
                     subtitle &&
                     <div className="section__subtitle">
-                        <h3>{subtitle}</h3>
+                        <h2>{subtitle}</h2>
                     </div>
                 }
 

@@ -49,14 +49,6 @@
         @include space-4(margin, lg, sm, md, sm);
         @include space-4(padding, md, xl, xl, md);
 
-        @media (max-width: 768px) {
-            top: -4.6em;
-        }
-
-        @media (max-width: 480px) {
-            top: -4.6em;
-        }
-
         &--primary {
             background-color: $color-primary;
         }
@@ -81,6 +73,13 @@
             width: 35px;
             height: 38px;
             background: url("./../../../public/images/shadow.png");
+            @media (max-width: 768px) {
+                bottom: -9px;
+            }
+    
+            @media (max-width: 480px) {
+                bottom: -9px;
+            }
         }
 
         &::after {
@@ -95,6 +94,13 @@
             width: 35px;
             height: 38px;
             background: url("./../../../public/images/shadow.png");
+            @media (max-width: 768px) {
+                bottom: -9px;
+            }
+    
+            @media (max-width: 480px) {
+                bottom: -9px;
+            }
         }
     }
 
