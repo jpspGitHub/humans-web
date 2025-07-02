@@ -21,21 +21,28 @@
 
 .page_content {
     .about {
+        p {
+            line-height: 1.8rem;
+        }
+
         &__introduction {
             width: 75%;
             margin: 0 auto;
-            
+
         }
 
         &__mission-vision {
             display: flex;
-            background: $color-light-neutral;
-            border-radius: $border-radius-md;
-            @include space-2(padding, md, lg);
+            gap: 16px;
             @include space-2(margin, xl, 0);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 
             &__item {
+                @include space-2(padding, lg, xl);
+                @include space-2(margin, xl, 0);
+                background: $color-light-neutral;
+                border-radius: $border-radius-md;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -58,10 +65,7 @@
         }
 
         &__values {
-            background: $color-light-neutral;
-            border-radius: $border-radius-md;
-            @include space-2(padding, md, lg);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            // @include space-2(margin, xl, 0);
             @include space-2(margin, xl, 0);
 
             &--icon {
@@ -75,14 +79,21 @@
             }
 
             &__items {
+                
                 list-style-type: none;
                 padding-left: 0;
                 display: flex;
                 flex-wrap: wrap;
+                gap: 16px;
 
                 li {
-                    width: 33.3%;
-                    margin-bottom: 0.5rem;
+                    background: $color-light-neutral;
+                    border-radius: $border-radius-md;
+                    @include space-2(padding, md, lg);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+                    // @include space-2(margin, xl, 0);
+                    width: calc(33.3% - 16px);
+                    // margin-bottom: 0.5rem;
                     @include space-2(padding, md, lg);
 
                     h3 {
