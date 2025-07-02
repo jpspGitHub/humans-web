@@ -19,9 +19,12 @@ export default function AboutPage() {
       >
         <div className='page_content'>
           <div className='about__introduction'>
-            <h2>Quienes somos?</h2>
-            <p>Somos un centro de formación especializado en primeros auxilios, soporte vital básico, rescate
-              acuático y entrenamiento técnico en natación.<br />
+            <h1>Quienes somos?</h1>
+            <p className='about__introduction--text'>Somos un centro de formación especializado en primeros auxilios, soporte vital básico, rescate
+              acuático y entrenamiento técnico en natación.
+            </p>
+            <br />
+            <p>
               Trabajamos con una metodología enfocada en lapráctica, la simulación real y la adaptación a distintos contextos: desde empresas e
               instituciones educativas hasta grupos particulares y profesionales del deporte o la salud. <br />
               Contamos con instructores altamente capacitados, materiales de entrenamiento de última
@@ -76,41 +79,46 @@ export default function AboutPage() {
             </ul>
           </div>
 
+          <div className='about__extra'>
+            <h1>¿Por qué elegirnos?</h1>
+            <p className='about__extra--subtitle'>En una emergencia, no hay segundas oportunidades.
+              En Human formamos personas capaces de actuar en los primeros minutos, cuando cada
+              segundo cuenta.</p>
 
-          <h2>¿Por qué elegirnos?</h2>
-          <p>En una emergencia, no hay segundas oportunidades.
-            En Human formamos personas capaces de actuar en los primeros minutos, cuando cada
-            segundo cuenta.</p>
+            <div className='about__extra_content'>
 
+              <div className='about__extra_box'>
+                <h3>Experiencia comprobada</h3>
+                <p>Años capacitando a profesionales, familias, empresas y equipos de alto rendimiento.</p>
+              </div>
 
-          <div>
-            <h3>Experiencia comprobada</h3>
-            <p>Años capacitando a profesionales, familias, empresas y equipos de alto rendimiento.</p>
+              <div className='about__extra_box'>
+                <h3>Entrenamiento técnico realista</h3>
+                <p>Simulaciones, prácticas en mar abierto, coordinación con aeronaves, uso de equipos reales. <br />
+                  Aprendé a actuar, no solo a saber.</p>
+              </div>
+
+              <div className='about__extra_box'>
+                <h3>Aval nacional e internacional</h3>
+                <p>Cumplimos con el Decreto 330 y certificamos con entidades reconocidas como la American
+                  Lifeguard Association y World Academy Safety Health.</p>
+              </div>
+
+              <div className='about__extra_box'>
+                <h3>Cursos adaptados a vos</h3>
+                <p>Capacitaciones presenciales, online o mixtas, para público general, instituciones, empresas o
+                  grupos particulares.</p>
+              </div>
+
+              <div className='about__extra_box'>
+                <h3>Más allá de lo físico</h3>
+                <p>Enseñamos también a acompañar desde lo emocional. Porque saber calmar y contener
+                  también puede salvar una vida.</p>
+              </div>
+
+            </div>
           </div>
-
-          <h3>Entrenamiento técnico realista</h3>
-          <p>Simulaciones, prácticas en mar abierto, coordinación con aeronaves, uso de equipos reales. <br />
-            Aprendé a actuar, no solo a saber.</p>
-          <div>
-
-            <h3>Aval nacional e internacional</h3>
-            <p>Cumplimos con el Decreto 330 y certificamos con entidades reconocidas como la American
-              Lifeguard Association y World Academy Safety Health.</p>
-          </div>
-          <div>
-
-            <h3>Cursos adaptados a vos</h3>
-            <p>Capacitaciones presenciales, online o mixtas, para público general, instituciones, empresas o
-              grupos particulares.</p>
-          </div>
-          <div>
-
-            <h3>Más allá de lo físico</h3>
-            <p>Enseñamos también a acompañar desde lo emocional. Porque saber calmar y contener
-              también puede salvar una vida.</p>
-          </div>
-
-          <div className='quote'>
+          <div className='about__quote'>
             <h3>“Te formamos como si tuvieras que salvarnos la vida.
               Y esperamos que te entrenes como si fueras a salvar a los tuyos.
               Porque saber qué hacer, cuándo hacerlo y cómo hacerlo puede marcar la diferencia entre la

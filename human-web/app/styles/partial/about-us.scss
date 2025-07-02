@@ -24,6 +24,7 @@
         &__introduction {
             width: 75%;
             margin: 0 auto;
+            
         }
 
         &__mission-vision {
@@ -40,6 +41,7 @@
                 align-items: center;
                 margin-bottom: 1rem;
                 width: 50%;
+
                 &--icon {
                     font-size: 2rem;
                     margin-right: 1rem;
@@ -93,6 +95,41 @@
                     }
                 }
             }
+        }
+
+        &__extra {
+            @include space-2(margin, lg, 0);
+
+            &--subtitle {
+                width: 75%;
+                @include space-2(margin, lg, auto);
+            }
+
+            &_content {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+
+            &_box {
+                background-color: $color-light-neutral;
+                border-radius: $border-radius-md;
+                @include space-2(padding, md, lg);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+                width: calc(33% - 16px);
+            }
+        }
+
+        &__quote {
+            @include space-2(margin, 0, auto);
+            width: 75%;
+            text-align: center;
+
+            // h3 {
+            //     font-size: 1.5rem;
+            //     margin-bottom: 1rem;
+            // }
         }
     }
 }
