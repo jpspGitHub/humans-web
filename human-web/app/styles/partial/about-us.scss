@@ -70,7 +70,7 @@
             }
 
             &__items {
-                
+
                 list-style-type: none;
                 padding-left: 0;
                 display: flex;
@@ -82,14 +82,15 @@
                     border-radius: $border-radius-md;
                     @include space-2(padding, md, lg);
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-                    // @include space-2(margin, xl, 0);
                     width: calc(33.3% - 16px);
-                    // margin-bottom: 0.5rem;
                     @include space-2(padding, md, lg);
 
                     h3 {
+                        color: $color-primary;
                         font-size: 1.2rem;
                         margin-bottom: 0.2rem;
+                        @include space-2(margin, md, 0);
+
                     }
 
                     p {
