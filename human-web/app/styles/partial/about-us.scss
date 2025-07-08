@@ -37,8 +37,8 @@
             @include space-2(margin, xl, 0);
 
             &__item {
-                @include space-2(padding, lg, xl);
-                @include space-2(margin, xl, 0);
+                @include space-2(padding, xl, xl);
+                // @include space-2(margin, xl, 0);
                 background: $color-light-neutral;
                 border-radius: $border-radius-md;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -53,19 +53,10 @@
                     font-size: 2rem;
                     margin-right: 1rem;
                 }
-
-                // &--title {
-                //     font-size: 1.2rem;
-                // }
-
-                // &-text {
-                //     font-size: 1.2rem;
-                // }
             }
         }
 
         &__values {
-            // @include space-2(margin, xl, 0);
             @include space-2(margin, xl, 0);
 
             &--icon {
