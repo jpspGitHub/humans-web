@@ -1,4 +1,12 @@
 .about {
+    &__content {
+        p {
+            line-height: 1.8rem;
+            width: 75%;
+            @include space-2(margin, lg, auto);
+        }
+    }
+
     &__info {
         margin: 2rem 0;
         display: flex;
@@ -28,6 +36,10 @@
         &__introduction {
             width: 75%;
             margin: 0 auto;
+
+            p{
+                @include space-2(margin, lg, auto);
+            }
 
         }
 
@@ -125,7 +137,8 @@
         }
 
         &__quote {
-            @include space-2(margin, 0, auto);
+            @include space(margin-top, lg);
+            
             width: 75%;
             text-align: center;
 

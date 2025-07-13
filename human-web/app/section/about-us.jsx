@@ -27,45 +27,34 @@ const AboutUs = () => {
     <Section
       theme="light"
       title="¿Quienes somos?"
-      subtitle={<>En <b>Human</b> creemos que la preparación puede marcar la diferencia entre la vida y la muerte.</>}
+      subtitle={<>Preparados para actuar, entrenados para cuidar<br />Capacitación integral en emergencias, con enfoque técnico, humano y emocional.</>}
       image={education}
-      actions={[
-        {
-          label: 'Conocé más sobre nuestra historia!',
-          href: '/pages/about',
-          className: 'accent',
-        },
-      ]}
-    >
-      <>
-        <p> Somos un centro de capacitación especializado en primeros auxilios, soporte vital básico y rescate acuático. Nuestra misión es formar personas y equipos capaces de actuar con seguridad y eficacia frente a emergencias.</p>
-        <br />
-        <div className="about">
+      actions={
+        [
           {
-            aboutInfo.map((info, index) => (
-              <div key={index} className="about__info">
-                <div className="about__info-icon">
-                  <FontAwesomeIcon icon={info.icon} />
-                </div>
-                <div className="about__info-text">
-                  <h3>{info.title}</h3>
-                  <p>{info.description}</p>
-                </div>
-              </div>
-            ))
-          }
-        </div>
-        {/* <div>
-          <div><FontAwesomeIcon icon={faCompass} /></div>
-          <div>
-          <h3>Nuestra misión</h3> 
-          <p>Formar personas listas para ayudar, con compromiso y profesionalismo.</p>
-          </div>
-        </div>
-        <p><b>Nuestra misión</b> Formar personas listas para ayudar, con compromiso y profesionalismo.</p>
-        <p><b>Nuestra visión</b> Una sociedad donde todos estén preparados para salvar una vida.</p>
-        <p><b>Nuestros valores</b> Compromiso · Responsabilidad · Claridad · Profesionalismo · Acción</p> */}
-      </>
+            label: 'Conocé nuestra propuesta completa!',
+            href: '/pages/about',
+            className: 'accent',
+          },
+        ]}
+    >
+      <div className="about__content">
+        <p>
+          En <strong>Human</strong> creemos que la preparación salva vidas. Somos un centro especializado en
+          <strong>primeros auxilios, soporte vital, rescate acuático</strong> y
+          <strong>entrenamiento técnico en natación</strong>, que combina simulación realista, acompañamiento emocional
+          y metodologías adaptadas a cada contexto.
+        </p>
+        <p>
+          Formamos personas y equipos que actúan con eficacia, empatía y responsabilidad. Ya sea en una empresa,
+          una escuela, una playa o en el hogar, nuestros entrenamientos priorizan la prevención, el bienestar integral
+          y la respuesta inmediata ante emergencias reales.
+        </p>
+        <p>
+          Con aval nacional e internacional, instructores altamente capacitados y tecnología de última generación,
+          nuestra misión es construir una sociedad más segura, humana y preparada.
+        </p>
+      </div>
     </Section >
   );
 };

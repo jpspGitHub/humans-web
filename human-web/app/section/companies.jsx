@@ -12,19 +12,15 @@ const Companies = () => {
       actions={[
         {
           label: 'Descubre más!',
-          href: '/companies',
+          href: '/pages/companies',
           className: 'natural',
         },
       ]}
     >
-      <p>Diseñamos capacitaciones a medida para crear entornos más seguros.</p>
-      <br></br>
-      <br></br>
-      <ul className="companies__list">
-        <li>Cursos personalizados</li>
-        <li>Espacios cardioprotegidos</li>
-        <li>Contacto directo</li>
-      </ul>
+      <p>Capacitar a tu equipo no solo mejora la respuesta ante emergencias.</p>
+      <p>También protege a las personas, cuida a tus clientes y refuerza la confianza en tu organización.</p>
+      <p>Con <b>HUMAN</b>, tu empresa está un paso más cerca de convertirse en un entorno preparado, comprometido y humano.</p>
+     
     </Section>
 
   );

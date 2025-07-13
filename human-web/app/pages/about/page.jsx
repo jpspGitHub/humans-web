@@ -14,41 +14,45 @@ export default function AboutPage() {
       <Header title={`¿Quienes somos?`} image={image2} />
       <Section theme={'light'} className={'page_content remove-bottom-separation'}
         subtitle={<>En Human creemos que estar preparado puede marcar la diferencia entre la vida y la muerte.
-          P<br />or eso, nos dedicamos a capacitar personas y equipos para que puedan actuar con
+          <br />Por eso, nos dedicamos a capacitar personas y equipos para que puedan actuar con
           seguridad, claridad y eficacia cuando cada segundo cuenta.</>}
       >
         <div className='about__introduction'>
-          <h1>Quienes somos?</h1>
-          <p className='about__introduction--text'>Somos un centro de formación especializado en primeros auxilios, soporte vital básico, rescate
-            acuático y entrenamiento técnico en natación.
-          </p>
-          <br />
+          <h1>¿QUIÉNES SOMOS?</h1>
           <p>
-            Trabajamos con una metodología enfocada en lapráctica, la simulación real y la adaptación a distintos contextos: desde empresas e
-            instituciones educativas hasta grupos particulares y profesionales del deporte o la salud. <br />
-            Contamos con instructores altamente capacitados, materiales de entrenamiento de última
-            generación y avales nacionales e internacionales que respaldan la calidad de nuestra
-            propuesta.
+            Somos un centro de formación y acompañamiento especializado en <strong>primeros auxilios, soporte vital, rescate acuático</strong>,
+            entrenamiento y perfeccionamiento técnico en natación, con una mirada integral que también incluye el <strong>bienestar físico y emocional</strong>.
+          </p>
+          <p>
+            Nuestra metodología combina <strong>práctica, simulación y adaptación contextual</strong>, para garantizar experiencias formativas efectivas.
+            Trabajamos con empresas, instituciones educativas, profesionales del deporte y la salud, así como con grupos particulares que buscan
+            estar preparados para actuar.
+          </p>
+          <p>
+            Contamos con instructores altamente capacitados, tecnología de entrenamiento de última generación y <strong>aval nacional e internacional</strong>,
+            lo que respalda la calidad y el compromiso de cada propuesta.
+          </p>
+          <p class="font-semibold text-indigo-600">
+            Entrenamos para salvar, acompañamos para cuidar.
           </p>
         </div>
       </Section>
-      <Section theme={'light'}  image={image2} className={'page_content remove-bottom-separation'}>
+      <Section theme={'natural'} image={image2} className={'page_content remove-bottom-separation'}>
         <div className='about__mission-vision'>
           <div className='about__mission-vision__item'>
             <FontAwesomeIcon icon={faCompass} className='about__mission-vision__item--icon' />
             <h2 className='about__mission-vision__item--title'>Nuestra misión</h2>
-            <p >Formar personas preparadas para responder ante emergencias, promoviendo el entrenamiento
-              continuo, el conocimiento aplicado y la construcción de entornos más seguros.</p>
+            <p >Formar personas y equipos capaces de actuar con eficacia, empatía y responsabilidad ante situaciones de emergencia, 
+              promoviendo una cultura del cuidado basada en la prevención, el entrenamiento continuo y el bienestar integral.</p>
           </div>
           <div className='about__mission-vision__item'>
             <FontAwesomeIcon icon={faEye} className='about__mission-vision__item--icon' />
             <h2 className='about__mission-vision__item--title'>Nuestra visión</h2>
-            <p className='about__mission-vision__item--text'>Una sociedad donde cada persona sepa cómo actuar ante una emergencia y sea parte activa
-              en el cuidado de los demás.</p>
+            <p className='about__mission-vision__item--text'>Una sociedad preparada, responsable y consciente, donde cada persona sepa cómo cuidar al otro y de si mismo —desde la intervención física hasta el acompañamiento emocional— y donde los entornos sean más seguros, humanos y resilientes…</p>
           </div>
         </div>
       </Section>
-      <Section theme={'primary'} image={education} className={'page_content remove-bottom-separation'}>
+      <Section theme={'ligth'} image={education} className={'page_content remove-bottom-separation'}>
         <div className='about__values'>
           <FontAwesomeIcon icon={faHeart} className='about__values--icon' />
           <h2 className='about__values--title'>Nuetros valores</h2>
@@ -82,52 +86,41 @@ export default function AboutPage() {
           </ul>
         </div>
       </Section>
-      <Section theme={'light'} className={'page_content'}>
+      <Section theme={'natural'} className={'page_content'}>
         <div className='about__extra'>
           <h1>¿Por qué elegirnos?</h1>
-          <p className='about__extra--subtitle'>En una emergencia, no hay segundas oportunidades.
-            En Human formamos personas capaces de actuar en los primeros minutos, cuando cada
-            segundo cuenta.</p>
+          <p className='about__extra--subtitle'>Somos un centro integral de formación, prevención y bienestar, con una propuesta que combina:</p>
 
           <div className='about__extra_content'>
 
             <div className='about__extra_box'>
-              <h3>Experiencia comprobada</h3>
-              <p>Años capacitando a profesionales, familias, empresas y equipos de alto rendimiento.</p>
+              <p>Entrenamiento técnico de alto nivel en primeros auxilios, RCP y rescate acuático.</p>
             </div>
 
             <div className='about__extra_box'>
-              <h3>Entrenamiento técnico realista</h3>
-              <p>Simulaciones, prácticas en mar abierto, coordinación con aeronaves, uso de equipos reales. <br />
-                Aprendé a actuar, no solo a saber.</p>
+              <p>Contención emocional y bienestar como parte esencial de cada capacitación.</p>
             </div>
 
             <div className='about__extra_box'>
-              <h3>Aval nacional e internacional</h3>
-              <p>Cumplimos con el Decreto 330 y certificamos con entidades reconocidas como la American
-                Lifeguard Association y World Academy Safety Health.</p>
+              <p>Adaptabilidad total: diseñamos propuestas según el rubro, contexto y necesidades reales.</p>
             </div>
 
             <div className='about__extra_box'>
-              <h3>Cursos adaptados a vos</h3>
-              <p>Capacitaciones presenciales, online o mixtas, para público general, instituciones, empresas o
-                grupos particulares.</p>
+              <p>Práctica realista y simulación aplicada, porque creemos que solo se aprende actuando.</p>
             </div>
 
             <div className='about__extra_box'>
-              <h3>Más allá de lo físico</h3>
-              <p>Enseñamos también a acompañar desde lo emocional. Porque saber calmar y contener
-                también puede salvar una vida.</p>
+              <p>Certificación reconocida, avalada a nivel nacional e internacional.</p>
+            </div>
+
+            <div className='about__extra_box'>
+              <p>Enfoque humano, cercano y profesional, que forma personas preparadas para actuar y acompañar.</p>
             </div>
 
           </div>
         </div>
         <div className='about__quote'>
-          <h3>“Te formamos como si tuvieras que salvarnos la vida.
-            Y esperamos que te entrenes como si fueras a salvar a los tuyos.
-            Porque saber qué hacer, cuándo hacerlo y cómo hacerlo puede marcar la diferencia entre la
-            vida y la muerte.
-            ”</h3>
+          <h3>Nos eligen porque no solo enseñamos a intervenir, sino a cuidar.</h3>
         </div>
       </Section>
       <ContactUs />
