@@ -70,7 +70,9 @@
 
       &--text {
         text-align: center;
-        @include space(margin-bottom, md);
+        p{
+          @include space(margin-bottom, md);
+        }
       }
     }
 

@@ -28,7 +28,7 @@ const Trainings = () => {
             </div>
             <div className="trainings__block-content">
               <div className="trainings__block-content--text">
-                <p>{training.text}</p>
+                {training.text}
               </div>
               <Button className={'accent'} href={`/pages/trainings/${training.id}`}>
                 Ver más!
