@@ -10,22 +10,13 @@ import image2 from './../public/images/cover-2.jpg';
 import Testimonials from "./section/testimonials";
 
 export default function Home() {
-  const background = {
-    title: 'Preparados para actuar, entrenados para salvar.',
-    subtitle: 'Capacitaciones en primeros auxilios, soporte vital básico, rescate acuático y entrenamiento en natación técnica.',
-    backgroundImage: image2
-  };
-  const background2 = {
-    title: 'Formación que salva vidas',
-    subtitle: 'Aprendé técnicas efectivas en situaciones reales, soporte vital y rescate acuático.',
-    backgroundImage: image2
-  };
+  
   return (
     <div>
       <Header
-        title={background2.title}
-        subtitle={background2.subtitle}
-        image={background2.backgroundImage}
+        title={'Más que salvar vidas'}
+        subtitle={'Formación, acompañamiento y cultura del cuidado.'}
+        image={image2}
         fullScreen={true}
       />
       <AboutUs />
